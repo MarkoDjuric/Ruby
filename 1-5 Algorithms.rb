@@ -37,7 +37,7 @@ def larger_number(num1, num2)
     return num1
   else 
     return num2
-end
+  end
 end
 puts larger_number(42, 28)   # => 42
 puts larger_number(99, 100)  # => 100
@@ -54,7 +54,7 @@ def longer_string(str1, str2)
   if str1.length >= str2.length
     return str1
  else return str2
-  end
+ end
 end
 
 puts longer_string("app", "academy") # => "academy"
