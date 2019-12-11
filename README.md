@@ -10,3 +10,4 @@ number_check
 
 word_check
 
+count E
