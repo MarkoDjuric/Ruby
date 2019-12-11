@@ -10,4 +10,12 @@ number_check
 
 word_check
 
-count E
+count_e
+
+count_a
+
+count_vowels
+
+sum_nums
+
+factorial
