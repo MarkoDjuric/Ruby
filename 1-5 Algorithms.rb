@@ -39,6 +39,12 @@ def larger_number(num1, num2)
     return num2
   end
 end
+
+
+
+ 
+    
+   
 puts larger_number(42, 28)   # => 42
 puts larger_number(99, 100)  # => 100
 
@@ -104,3 +110,76 @@ end
 puts word_check("contraption") # => "long"
 puts word_check("fruit")       # => "short"
 puts word_check("puzzle")      # => "medium"
+
+
+6.Count E
+
+#Write a method count_e(word) that takes in a string word 
+#and returns the number of e's in the word
+
+
+def count_e(word)
+  counter = 0
+  i = 0
+  
+  while i  < word.length
+     if word[i] == 'e'
+        counter += 1
+      end
+     i += 1
+  end
+  
+  return counter
+end
+
+puts count_e("movie") # => 1
+puts count_e("excellent") # => 3
+
+
+7.Count A
+
+#Write a method count_a(word) that takes in a string word and returns the number of a's in the word. 
+#The method should count both lowercase (a) and uppercase (A)
+
+
+def count_a(word)
+counter = 0
+  i = 0
+  
+  while i  < word.length
+     if word[i] == 'a' || word[i] == 'A' 
+        counter += 1
+      end
+     i += 1
+  end
+  
+  return counter
+end
+
+puts count_a("application")  # => 2
+puts count_a("bike")         # => 0
+puts count_a("Arthur")       # => 1
+puts count_a("Aardvark")     # => 3
+
+
+8.Count Vowels
+
+#Write a method, count_vowels(word), that takes in a string word and returns the number of vowels in the word.
+#Vowels are the letters a, e, i, o, u
+
+
+def count_vowels(word)
+counter = 0
+  i = 0
+  while i  < word.length
+     if word[i] == 'a' || word[i] == 'e' || word[i] == 'i'|| word[i] == 'o'|| word[i] == 'u'
+        counter += 1
+      end
+     i += 1
+  end
+  return counter
+end
+
+puts count_vowels("bootcamp")  # => 3
+puts count_vowels("apple")     # => 2
+puts count_vowels("pizza")     # => 2
