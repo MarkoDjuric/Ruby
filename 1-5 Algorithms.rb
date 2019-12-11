@@ -37,14 +37,10 @@ def larger_number(num1, num2)
     return num1
   else 
     return num2
+    
   end
 end
 
-
-
- 
-    
-   
 puts larger_number(42, 28)   # => 42
 puts larger_number(99, 100)  # => 100
 
@@ -183,3 +179,49 @@ end
 puts count_vowels("bootcamp")  # => 3
 puts count_vowels("apple")     # => 2
 puts count_vowels("pizza")     # => 2
+
+
+9.Sum Nums
+
+#Write a method sum_nums(max) that takes in a number max and returns the sum of all numbers 
+#from 1 up to and including max.
+
+
+def sum_nums(max)
+  counter = 0
+  
+  i = 1
+  while i <=  max 
+    counter += i
+    i += 1
+  end
+return counter
+end
+
+puts sum_nums(6) # => 10, because 1 + 2 + 3 + 4 = 10
+puts sum_nums(5) # => 15
+
+
+10.Factorial
+
+#Write a method factorial(num) that takes in a number num and returns the product of all numbers 
+#from 1 up to and including num.
+
+
+def factorial(num)
+  counter = 1
+  i = 1
+  
+  while i <= num
+    factor = 0
+    counter*=i
+    i+=1
+  end
+   return counter
+end
+
+puts factorial(3) # => 6, because 1 * 2 * 3 = 6
+puts factorial(5) # => 120, because 1 * 2 * 3 * 4 * 5 = 120
+
+
+
