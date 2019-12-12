@@ -19,3 +19,11 @@ count_vowels
 sum_nums
 
 factorial
+
+reverse
+
+is palindrome
+
+yell
+
+element time index
