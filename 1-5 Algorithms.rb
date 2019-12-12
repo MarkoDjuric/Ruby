@@ -223,5 +223,87 @@ end
 puts factorial(3) # => 6, because 1 * 2 * 3 = 6
 puts factorial(5) # => 120, because 1 * 2 * 3 * 4 * 5 = 120
 
+10.Reverse
 
+#Write a method reverse(word) that takes in a string word and returns the word with its letters in reverse order.
+
+
+def reverse(word)
+  
+  i = 1
+  counter = ''
+  while i <= word.length
+    
+ counter+= word[word.length-i]
+    i+=1
+ end
+    return counter
+ end
+
+puts reverse("cat")          # => "tac"
+puts reverse("programming")  # => "gnimmargorp"
+puts reverse("bootcamp")     # => "pmactoob"
+
+
+11.Is Palindrome
+
+
+def is_palindrome(word)
+  reversed = ''
+  i = 1
+  while i <= word.length 
+    reversed += word[word.length-i]
+    i+=1
+  end
+  if reversed == word
+       return true 
+  else return false
+  end
+end
+
+puts is_palindrome("racecar")  # => true
+puts is_palindrome("kayak")    # => true
+puts is_palindrome("anaaaaad") # => false
+
+
+12.Yell
+
+#Write a method yell(words) that takes in an array of words and returns a
+#new array where every word from the original array has an exclamation point after it.
+
+
+def yell(words)
+
+  concated_word = []
+  i = 0
+  while i < words.length
+    concated_word << words[i] + '!'
+    i+=1
+  end
+   return concated_word
+  end
+
+print yell(["hello", "world"]) # => ["hello!", "world!"]
+puts
+print yell(["code", "is", "cool"]) # => ["code!", "is!", "cool!"]
+
+
+13.Element Times Index
+
+#Write a method element_times_index(nums) that takes in an array of numbers 
+#and returns a new array containing every number of the original array multiplied with its index.
+
+def element_times_index(numbers)
+     i = 0
+  concated_numbers = []
+ while i < numbers.length
+     concated_numbers << numbers[i]* i
+    i+=1
+ end
+  return concated_numbers
+end
+
+print element_times_index([4, 7, 6, 5])       # => [0, 7, 12, 15]
+puts
+print element_times_index([1, 1, 1, 1, 1, 1]) # => [0, 1, 2, 3, 4, 5]
 
