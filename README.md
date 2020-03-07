@@ -30,12 +30,13 @@ element time index
 
 event nums
 
-Range
+range
 
-Odd Range
+odd range
 
-Reverse Range
+reverse range
 
+fist half
 
 
 
