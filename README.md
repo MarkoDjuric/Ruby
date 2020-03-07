@@ -27,3 +27,16 @@ is palindrome
 yell
 
 element time index
+
+event nums
+
+Range
+
+Odd Range
+
+Reverse Range
+
+
+
+
+
