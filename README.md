@@ -36,7 +36,9 @@ odd range
 
 reverse range
 
-fist half
+first half
+
+
 
 
 
