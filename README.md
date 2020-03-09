@@ -38,6 +38,13 @@ reverse range
 
 first half
 
+factors of
+
+sum eleemnts
+
+
+
+
 
 
 
