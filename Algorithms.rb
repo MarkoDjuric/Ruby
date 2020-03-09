@@ -450,3 +450,101 @@ end
 print first_half(["Brian", "Abby", "David", "Ommi"]) # => ["Brian", "Abby"]
 puts
 print first_half(["a", "b", "c", "d", "e"])          # => ["a", "b", "c"]
+
+
+
+19. Factors Of
+
+#Write a method factors_of(num) that takes in a num and returns an array of all positive numbers 
+#less than or equal to num that can divide num.
+
+
+def factors_of(num)
+  
+  array_positive = []
+  
+  i = 1
+  
+  while i <= num
+    
+    if num % i == 0 
+    array_positive << i
+      
+  end
+    i+=1
+  end
+  
+  return  array_positive
+end
+
+print factors_of(3)   # => [1, 3]
+puts
+print factors_of(4)   # => [1, 2, 4]
+puts
+print factors_of(8)   # => [1, 2, 4, 8]
+puts
+print factors_of(9)   # => [1, 3, 9]
+puts
+print factors_of(16)  # => [1, 2, 4, 8, 16]
+
+
+
+20. Select Odds
+
+#Write a method select_odds(numbers) that takes in an array of numbers and 
+#returns a new array containing the odd numbers of the original array.
+
+
+def select_odds(numbers)
+  
+  array_odds = []
+  i = 0
+  
+  while i < numbers.length
+    
+    if numbers[i] % 2 != 0
+      
+      array_odds << numbers[i]
+      
+     end
+    
+     i+=1
+    
+   end
+  
+  return  array_odds
+  
+end
+
+print select_odds([13, 4, 3, 7, 6, 11]) # => [13, 3, 7, 11]
+puts
+print select_odds([2, 4, 6])            # => []
+
+
+
+21. Select Long Words
+
+#Write a method select_long_words(words) that takes in an array of words 
+#and returns a new array containing all of the words of the original array that are longer than 4 characters.
+
+
+def select_long_words(words)
+
+  four_caracters = []
+  
+  i = 0
+   
+  while i < words.length
+    if words[i].length > 4
+       four_caracters << words[i]
+    end
+    i+=1
+  end
+    return four_caracters
+end
+
+print select_long_words(["what", "are", "we", "eating", "for", "dinner"]) # => ["eating", "dinner"]
+puts
+print select_long_words(["keep", "coding"])                               # => ["coding"]
+
+
