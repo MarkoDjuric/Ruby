@@ -42,6 +42,10 @@ factors of
 
 sum eleemnts
 
+select odds
+
+
+
 
 
 
