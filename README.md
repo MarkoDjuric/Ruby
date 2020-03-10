@@ -46,6 +46,12 @@ select odds
 
 select longest words
 
+sum elements
+
+Fizz Buzz
+
+to initials
+
 
 
 
