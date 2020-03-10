@@ -48,7 +48,7 @@ select longest words
 
 sum elements
 
-Fizz Buzz
+fizz buzz
 
 to initials
 
