@@ -548,3 +548,79 @@ puts
 print select_long_words(["keep", "coding"])                               # => ["coding"]
 
 
+
+22. Sum Elements
+
+#Write a method sum_elements(arr1, arr2) that takes in two arrays. 
+#The method should return a new array containing the results of adding together corresponding elements of the original arrays. You can assume the arrays have the same length.
+
+
+def sum_elements(arr1, arr2)
+  
+  sum_array = []
+  
+  i = 0
+  
+  while i < arr1.length
+    
+   sum_array << arr1[i] + arr2[i]
+    
+    i+=1
+    
+  end
+  
+ return sum_array
+  
+end
+
+print sum_elements([7, 4, 4], [3, 2, 11]) # => [10, 6, 15]
+puts
+print sum_elements(["cat", "pizza", "boot"], ["dog", "pie", "camp"]) # => ["catdog", "pizzapie", "bootcamp"]
+
+
+23. Fizz Buzz
+
+#Write a method fizz_buzz(max) that takes in a number max and returns an array 
+#containing all numbers greater than 0 and less than max that are divisible by either 4 or 6, but not both
+
+
+def fizz_buzz(max)
+  
+  new_array = []
+  
+  i = 1
+ 
+ while i < max
+    
+    if ((i % 4 == 0 || i % 6== 0) && (!(i % 4 == 0 && i % 6== 0 )))
+    new_array << i
+  
+    end
+     i+=1
+  end  
+return new_array
+end
+
+print fizz_buzz(20) # => [4, 6, 8, 16, 18]
+puts
+print fizz_buzz(15) # => [4, 6, 8]
+
+
+
+24. To Initials
+#Write a method to_initials that takes in a person's name string and returns a string representing their initials.
+
+
+def to_initials(name)
+ 
+str = ""
+ name.split(" ").each { |ele|  str += ele[0] }
+     
+  return str
+end
+
+puts to_initials("Kelvin Bridges")      # => "KB"
+puts to_initials("Michaela Yamamoto")   # => "MY"
+ puts to_initials("Mary La Grange")      # => "MLG"
+
+
