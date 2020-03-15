@@ -52,6 +52,11 @@ fizz buzz
 
 to initials
 
+first in array
+
+format name
+
+is valid name
 
 
 
