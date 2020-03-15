@@ -598,7 +598,7 @@ def fizz_buzz(max)
     end
      i+=1
   end  
-return new_array
+ return new_array
 end
 
 print fizz_buzz(20) # => [4, 6, 8, 16, 18]
@@ -612,8 +612,8 @@ print fizz_buzz(15) # => [4, 6, 8]
 
 
 def to_initials(name)
- 
-str = ""
+  str = ""
+  
  name.split(" ").each { |ele|  str += ele[0] }
      
   return str
@@ -621,6 +621,90 @@ end
 
 puts to_initials("Kelvin Bridges")      # => "KB"
 puts to_initials("Michaela Yamamoto")   # => "MY"
- puts to_initials("Mary La Grange")      # => "MLG"
+puts to_initials("Mary La Grange")      # => "MLG"
 
 
+
+25. First in Array
+#Write a method first_in_array that takes in an array and two elements, 
+#the method should return the element that appears earlier in the array.
+
+
+def first_in_array(arr, el1, el2)
+
+ pos1 = arr.index(el1)
+ pos2 = arr.index(el2)
+  
+  if pos1 < pos2
+    print el1
+  else
+    print el2
+  end
+end
+
+puts first_in_array(["a", "b", "c", "d"], "d", "b"); # => "b"
+puts first_in_array(["cat", "bird" ,"dog", "mouse" ], "dog", "mouse"); # => "dog"
+
+
+
+26. Format Name
+#Write a method format_name that takes in a name string and returns the name properly capitalized.
+
+
+# Hint: use str.upcase and str.downcase
+# "abc".upcase # => "ABC"
+
+def format_name(str)
+  name = []
+  
+  first_second_name = []
+  
+  name = str.split(" ")
+  
+  print name[0][1..-1]
+  
+end
+
+puts format_name("chase WILSON") # => "Chase Wilson"
+puts format_name("brian CrAwFoRd scoTT") # => "Brian Crawford Scott"
+
+
+
+27. Is Valid Name
+#Write a method is_valid_name that takes in a string and returns a boolean indicating whether 
+#or not it is a valid name.
+
+
+# A name is valid is if satisfies all of the following:
+# - contains at least a first name and last name, separated by spaces
+# - each part of the name should be capitalized
+#
+# Hint: use str.upcase or str.downcase
+# "a".upcase # => "A"
+
+def is_valid_name(str)
+  newStr = str.split(' ')
+  valid = []
+  
+  newStr.each do |element|
+ 
+  valid << element[0].upcase + element[1..-1].downcase
+
+  end
+  
+   print valid.join(' ')
+  
+    if   newStr.length>1 && str ===  valid.join(' ')
+
+  return true
+      
+    else
+      
+      return false
+   end
+end
+
+puts is_valid_name("Kush Patel val")   # => true
+puts is_valid_name("Daniel")           # => false
+puts is_valid_name("Robert Downey Jr") # => true
+puts is_valid_name("ROBERT DOWNEY JR") # => false
