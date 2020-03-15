@@ -1,5 +1,7 @@
-# Ruby Algorithms
+# Ruby Algorithms 
 
+Here are my solutions of all these algorithms
+ 
 either_only
 
 larger_number
