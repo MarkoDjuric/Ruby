@@ -674,13 +674,9 @@ puts format_name("brian CrAwFoRd scoTT") # => "Brian Crawford Scott"
 #Write a method is_valid_name that takes in a string and returns a boolean indicating whether 
 #or not it is a valid name.
 
-
 # A name is valid is if satisfies all of the following:
 # - contains at least a first name and last name, separated by spaces
 # - each part of the name should be capitalized
-#
-# Hint: use str.upcase or str.downcase
-# "a".upcase # => "A"
 
 def is_valid_name(str)
   newStr = str.split(' ')
@@ -708,3 +704,109 @@ puts is_valid_name("Kush Patel val")   # => true
 puts is_valid_name("Daniel")           # => false
 puts is_valid_name("Robert Downey Jr") # => true
 puts is_valid_name("ROBERT DOWNEY JR") # => false
+
+
+
+28.Is Valid Email
+#Write a method is_valid_email that takes in a string and returns a boolean 
+#indicating whether or not it is a valid email address.
+
+
+
+# For simplicity, we'll consider an email valid when it satisfies all of the following:
+# - contains exactly one @ symbol
+# - contains only lowercase alphabetic letters before the @
+# - contains exactly one . after the @
+
+def is_valid_email(str) 
+brojevi = ['1','2','3','4','5','6','7','8','9','0']
+
+niz = str.split('')
+
+asterix = 0
+br = 0
+
+niz.each do |elem|
+if elem === '@' 
+   asterix +=1
+
+ elsif elem === '.' 
+   br+=1
+  end
+
+end
+
+if asterix === 1 && br === 1 
+ 
+ seekedNumber = 0
+
+
+niz.each do |elem|
+
+brojevi.each do |item|
+
+
+if elem === item
+seekedNumber+=1
+end
+end
+end
+if seekedNumber>0
+return false
+else
+return true
+end
+ else
+return false
+end
+
+end
+
+puts is_valid_email("abc@xy.z")         # => true
+puts is_valid_email("jdoe@gmail.com")   # => true
+puts is_valid_email("jdoe@g@mail.com")  # => false
+puts is_valid_email("jdoe42@gmail.com") # => false
+puts is_valid_email("jdoegmail.com")    # => false
+puts is_valid_email("az@email")         # => false
+
+
+
+29.Reverse Words
+#Write a method reverse_words that takes in a sentence string and returns the sentence 
+#with the order of the characters in each word reversed. 
+#Note that we need to reverse the order of characters in the words, do not reverse the order of words in the sentence.
+
+
+def reverse_words(str)
+  reversedString = ''
+
+i=1
+  
+while i <= str.length
+
+  reversedString += str[str.length-i]
+  
+i+=1
+  
+end
+  
+  arrNew = reversedString.split(' ')
+  
+ 
+     reversedString2 = []
+    z = 1
+while z <= arrNew.length
+
+  reversedString2 << arrNew[arrNew.length-z]
+z+=1
+end
+
+ return reversedString2.join(' ')
+  
+end
+
+puts reverse_words('keep coding') # => 'peek gnidoc'
+puts reverse_words('simplicity is prerequisite for reliability') # => 'yticilpmis si etisiuqererp rof ytilibailer'
+
+
+
