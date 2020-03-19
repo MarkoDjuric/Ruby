@@ -60,6 +60,11 @@ format name
 
 is valid name
 
+is valid email
+
+reverse words
+
+rotate array
 
 
 
