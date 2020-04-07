@@ -810,3 +810,83 @@ puts reverse_words('simplicity is prerequisite for reliability') # => 'yticilpmi
 
 
 
+
+30.Opposite Count
+#Write a method opposite_count that takes in an array of unique numbers. 
+#The method should return the number of pairs of elements that sum to 0.
+
+
+def opposite_count(nums)
+counter=0
+  nums.each_with_index do |num1, idx1|
+    nums.each_with_index do |num2, idx2|
+      if idx2>idx1 && num1 === -1*num2
+       counter+=1
+      end
+    end
+  end
+return counter
+end
+
+puts opposite_count([ 2, 5, 11, -5, -2, 7 ]) # => 2
+puts opposite_count([ 21, -23, 24 -12, 23 ]) # => 1
+
+
+31.Two D Sum
+#Write a method two_d_Sum that takes in a two dimensional array and returns the sum of all elements in the array.
+
+
+def two_d_sum(arr)
+  counter=0
+  arr.each_with_index do |arr1, idx1|
+    arr1.each_with_index do |arr2, idx2|
+      counter+=arr2
+    end
+  end
+return counter
+end
+
+array_1 = [ [4, 5],[1, 3, 7, 1]]
+puts two_d_sum(array_1)    # => 21
+
+array_2 = [
+  [3, 3],
+  [2],
+  [2, 5]
+]
+puts two_d_sum(array_2)   # => 15
+
+
+31.Two D Translate
+#Write a method two_d_translate that takes in a 2 dimensional array and translates it into a 1 dimensional array. 
+#You can assume that the inner arrays always have 2 elements. See the examples.
+
+
+def two_d_translate(arr)
+    str=[]
+
+   arr.each_with_index do |elem1, idx1|
+     elem1[-1].times do
+       str<<elem1[0]
+     end
+   end
+return str
+end
+  
+ 
+arr_1 = [
+  ['boot', 3],
+  ['camp', 2],
+  ['program', 0]
+]
+
+print two_d_translate(arr_1) # => [ 'boot', 'boot', 'boot', 'camp', 'camp' ]
+puts
+
+arr_2 = [
+  ['red', 1],
+  ['blue', 4]
+]
+
+print two_d_translate(arr_2) # => [ 'red', 'blue', 'blue', 'blue', 'blue' ]
+puts
