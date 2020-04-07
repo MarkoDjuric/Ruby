@@ -66,6 +66,13 @@ reverse words
 
 rotate array
 
+opposite count
+
+two D sum
+
+two D translate
+
+
 
 
 
