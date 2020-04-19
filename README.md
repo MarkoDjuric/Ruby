@@ -30,10 +30,6 @@ doubler
 
 yell
 
-element times index
-
-yell
-
 element time index
 
 event nums
