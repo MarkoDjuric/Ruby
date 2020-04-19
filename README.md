@@ -26,6 +26,12 @@ reverse
 
 is palindrome
 
+get double age
+
+get full name
+
+world leghts
+
 doubler
 
 yell
