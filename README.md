@@ -26,6 +26,12 @@ reverse
 
 is palindrome
 
+doubler
+
+yell
+
+element times index
+
 yell
 
 element time index
