@@ -80,6 +80,14 @@ two D sum
 
 two D translate
 
+get full name
+
+word lengths
+
+reverse values
+
+
+
 
 
 
