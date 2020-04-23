@@ -84,7 +84,15 @@ get full name
 
 word lengths
 
-reverse values
+retrive values
+
+cat builder
+
+ae count
+
+element count
+
+
 
 
 
