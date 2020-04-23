@@ -948,5 +948,58 @@ puts word_lengths("this is fun") #=> {"this"=>4, "is"=>2, "fun"=>3}
 puts word_lengths("When in doubt, leave it out") #=> {"When"=>4, "in"=>2, "doubt,"=>6, "leave"=>5, "it"=>2, "out"=>3}
 
 
-35.
+35.Retrieve Values
+#Write a method retrieve_values that takes in two hashes and a key. 
+#The method should return an array containing the values from the two hashes that correspond with the given key.
 
+
+def retrieve_values(hash1, hash2, key)
+  arrObj = []
+  if key==='name'
+    arrObj<< hash1["name"]
+    arrObj<< hash2["name"]
+  else
+     arrObj<< hash1["color"]
+    arrObj<< hash2["color"]
+  end
+   return [arrObj]
+  end
+
+
+36.Cat Builder
+#Write a method cat_builder that takes in a name, color, and age. 
+#The method should return a hash representing a cat with those values.
+
+
+def cat_builder(name_str, color_str, age_num)
+    return { "name"=>name_str, "color"=>color_str, "age"=>age_num }
+end
+
+print cat_builder("Whiskers", "orange", 3) #=> {"name"=>"Whiskers", "color"=>"orange", "age"=>3}
+puts
+
+print cat_builder("Salem", "black", 100) #=> {"name"=>"Salem", "color"=>"black", "age"=>100}
+puts
+
+  
+37.Ae Count
+#Write a method ae_count that takes in a string and returns a hash containing the number of a's and e's in the string.
+#Assume the string contains only lowercase characters.
+
+
+def ae_count(str)
+
+  count = Hash.new(0)
+  
+  str.each_char do |char|
+    if char === 'a'|| char === 'e'
+    
+    count[char]+=1
+    end
+  end
+  
+ return  count
+end
+
+puts ae_count("everyone can program") #=> {"a"=>2, "e"=>3}
+puts ae_count("keyboard") #=> {"a"=>1, "e"=>1}
