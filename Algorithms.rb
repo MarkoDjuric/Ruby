@@ -915,7 +915,7 @@ puts get_double_age({"name"=>"Ruby", "age"=>23})       # => 46
 
 def get_full_name(hash)
   
-return puts hash["first"]+" "+hash["last"]+ ", "+hash["title"]
+ return puts hash["first"]+" "+hash["last"]+ ", "+hash["title"]
    
 end
 
@@ -936,6 +936,7 @@ def word_lengths(sentence)
 
   noviObjekat = Hash.new(0)
   strArr.each do |elem|
+    
     noviObjekat[elem]+=elem.length
     
   end
@@ -1003,3 +1004,46 @@ end
 
 puts ae_count("everyone can program") #=> {"a"=>2, "e"=>3}
 puts ae_count("keyboard") #=> {"a"=>1, "e"=>1}
+
+
+
+38.Element Count
+#Write a method element_count that takes in an array and returns a hash representing the count of each element in the array.
+
+
+def element_count(arr)
+  count = Hash.new(0)
+  
+  arr.each do |elem|
+     count[elem]+=1
+  end
+ return  count
+end
+
+puts element_count(["a", "b", "a", "a", "b"]) #=> {"a"=>3, "b"=>2}
+puts element_count(["red", "red", "blue", "green"]) #=> {"red"=>2, "blue"=>1, "green"=>1}
+
+
+39.Select Upcase Keys
+#Write a method select_upcase_keys that takes in a hash and returns a new hash containing key-value pairs of the original hash that had uppercase keys. 
+#You can assume that the keys will always be strings.
+
+
+def select_upcase_keys(hash)
+  obj=Hash.new(0)
+  hash.each do |key, value|
+   if key === key.upcase
+    obj[key]=value
+   end
+  end
+  return obj
+end
+
+print select_upcase_keys({"make"=> "Tesla", "MODEL"=> "S", "Year"=> 2018, "SEATS"=> 4}) # => {"MODEL"=>"S", "SEATS"=>4}
+puts
+
+print select_upcase_keys({"DATE"=>"July 4th","holiday"=> "Independence Day", "type"=>"Federal"}) # => {"DATE"=>"July 4th"}
+puts
+
+
+40.Hand Score
