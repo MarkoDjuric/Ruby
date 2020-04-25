@@ -1047,3 +1047,56 @@ puts
 
 
 40.Hand Score
+#Write a method hand_score that takes in a string representing a hand of cards and returns it's total score.
+#You can assume the letters in the string are only A, K, Q, J. A is worth 4 points, K is 3 points, Q is 2 points, and J is 1 point. 
+#The letters of the input string not necessarily uppercase.
+
+
+def hand_score(hand)
+  object = {
+    'A' => 4,
+    'a' => 4,
+    'K' => 3,
+    'k' => 3,
+    'Q' => 2,
+    'q' => 2,
+    'J' => 1,
+    'j' => 1
+  }
+  
+counter=0
+  hand.each_char do  |char| 
+     counter+=object[char] 
+end
+  return counter
+end
+
+puts hand_score("AQAJ") #=> 11
+puts hand_score("jJka") #=> 9
+
+
+41.Frequent Letters
+#Write a method frequent_letters that takes in a string and returns an array containing the characters that appeared more than twice in the string
+
+
+def frequent_letters(string)
+ rray=[]
+  count = Hash.new(0)
+  
+  string.each_char { |char| count[char] += 1 }           
+    
+sorted = count.sort_by {  |k,v| v }
+print sorted
+sabran=[]
+sorted.each_with_index do |elem, idx|
+      if elem[1]>2
+      sabran<<elem[0]
+      end
+    end
+ return sabran
+end
+
+print frequent_letters('mississippi') #=> ["i", "s"]
+puts
+print frequent_letters('bootcamp') #=> []
+puts
