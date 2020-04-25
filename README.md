@@ -92,6 +92,12 @@ ae count
 
 element count
 
+select upcase keys
+
+hand score
+
+frequent letters
+
 
 
 
