@@ -98,6 +98,10 @@ hand score
 
 frequent letters
 
+hash to pairs
+
+unique elements
+
 
 
 
