@@ -1100,3 +1100,63 @@ print frequent_letters('mississippi') #=> ["i", "s"]
 puts
 print frequent_letters('bootcamp') #=> []
 puts
+
+
+41.Hash To Pairs
+#Write a method hash_to_pairs that takes in a hash and returns a 2D array representing each key-value pair of the hash.
+
+
+def hash_to_pairs(hash)
+  
+  array = [];
+  
+  hash.each do |key, val|
+ 
+    array<<[key,val]
+
+  end
+  
+  return array
+  
+end
+
+
+print hash_to_pairs({"name"=>"skateboard", "wheels"=>4, "weight"=>"7.5 lbs"}) #=> [["name", "skateboard"], ["wheels", 4], ["weight", "7.5 lbs"]]
+puts
+
+
+print hash_to_pairs({"kingdom"=>"animalia", "genus"=>"canis", "breed"=>"German Shepherd"}) #=> [["kingdom", "animalia"], ["genus", "canis"], ["breed", "German Shepherd"]]
+puts
+
+
+42.Unique Elements
+#Write a method unique_elements that takes in an array and returns a new array where all duplicate elements are removed.
+#Solve this using a hash.
+
+
+# Hint: all keys of a hash are automatically unique
+
+def unique_elements(arr)
+
+  counter = Hash.new(0)
+  
+  arr.each { |elem| counter[elem]+=1 }
+    
+  
+  sorted =  counter.sort_by { |k,v| k   }
+  
+    array=[]
+  
+   sorted.each_with_index do |elem1, idx|
+   print array<<elem1[0]  
+     
+  end
+  return array
+
+end
+
+ unique_elements(['a', 'b', 'a', 'a', 'b', 'c']) #=> ["a", "b", "c"]
+puts
+
+
+
