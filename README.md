@@ -102,6 +102,11 @@ hash to pairs
 
 unique elements
 
+map by name
+
+map by key
+
+yell sentence
 
 
 
