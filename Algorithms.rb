@@ -1235,4 +1235,59 @@ end
 puts yell_sentence("I have a bad feeling about this") #=> "I! HAVE! A! BAD! FEELING! ABOUT! THIS!"
 
 
-46.
+46.Whisper Words
+#Write a method whisper_words that takes in an array of words and returns a new array containing 
+#a whispered version of each word. See the examples. Solve this using map :).
+
+
+def whisper_words(words)
+  
+  new_arr = words.map { |word| word.downcase+"..."  } 
+  
+print new_arr
+  
+end
+
+print whisper_words(["KEEP", "The", "NOISE", "down"]) # => ["keep...", "the...", "noise...", "down..."]
+puts
+
+
+47.o Words
+#Write a method o_words that takes in a sentence string and returns an array of the words that contain an "o".
+#Use select in your solution!
+
+
+def o_words(sentence)
+  
+  sentence_arr = sentence.split(" ")
+  print sentence_arr
+  puts
+  
+o_words = sentence_arr.select { |word| word.include?('o')   }
+
+  
+  print o_words
+end
+
+print o_words("How did you do that?") #=> ["How", "you", "do"]
+puts
+
+
+48.Last Index
+#Write a method last_index that takes in a string and a character. 
+#The method should return the last index where the character can be found in the string.
+
+
+def last_index(str, char)
+
+ kontra_str =  str.reverse
+  
+   index = kontra_str.index(char)
+  
+  print kontra_str.length-1 - index
+end
+
+puts last_index("octagon", "o")    #=> 5
+puts last_index("programming", "m")#=> 7
+puts last_index("abca", "a")       #=> 3
+puts last_index("mississipi", "i") #=> 9
