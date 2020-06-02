@@ -108,8 +108,11 @@ map by key
 
 yell sentence
 
+whisper sords
 
+0 words
 
+last index
 
 
 
