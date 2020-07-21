@@ -293,8 +293,9 @@ print yell(["code", "is", "cool"]) # => ["code!", "is!", "cool!"]
 #and returns a new array containing every number of the original array multiplied with its index.
 
 def element_times_index(numbers)
-     i = 0
-  concated_numbers = []
+    concated_numbers = []
+  
+  i = 0
   while i < numbers.length
      concated_numbers << numbers[i]* i
      i+=1
@@ -316,6 +317,7 @@ print element_times_index([1, 1, 1, 1, 1, 1]) # => [0, 1, 2, 3, 4, 5]
 
 def even_nums(max)
   even_array = []
+  
   i = 0
   while i <= max
     
@@ -324,6 +326,7 @@ def even_nums(max)
       even_array << i
       
     end
+    
     i+=1
     
   end
