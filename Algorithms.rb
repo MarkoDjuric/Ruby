@@ -300,6 +300,7 @@ def element_times_index(numbers)
      concated_numbers << numbers[i]* i
      i+=1
  end
+  
   return concated_numbers
 end
 
@@ -322,15 +323,13 @@ def even_nums(max)
   while i <= max
     
     if i % 2 == 0
-      
       even_array << i
-      
-    end
+     end
     
     i+=1
-    
-  end
-    return even_array
+   end
+  
+  return even_array
 end
 
 print even_nums(10) # => [0, 2, 4, 6, 8, 10]
@@ -399,19 +398,16 @@ print odd_range(3, 7)   # => [3, 5, 7]
 
 
 def reverse_range(min, max)
-  i = max - min
-max_min_range = []
-  counter = 1
-  while counter < i
-    max-=1
+   reversed_array = []
+  
+  i = max - 1
+  while i > min
+     reversed_array << i
     
-    max_min_range << max
-    
-   i-=1
-   
-    
-end
-  return max_min_range 
+    i -= 1
+  end
+  
+return reversed_array
 end
 
 print reverse_range(10, 17) # => [16, 15, 14, 13, 12, 11]
