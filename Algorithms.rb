@@ -7,13 +7,20 @@
 
 
 def either_only(number)
+  
   if number % 3 == 0 && number % 5 != 0
+    
     return true
+    
   elsif number % 5 == 0 && number % 3 != 0
+    
     return true
+    
   else
+    
     return false
   end
+  
 end
 
 puts either_only(9)  # => true
