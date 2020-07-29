@@ -1091,10 +1091,11 @@ def frequent_letters(string)
     
 sorted = count.sort_by {  |k,v| v }
 print sorted
-sabran=[]
+sabran = []
+  
 sorted.each_with_index do |elem, idx|
       if elem[1]>2
-      sabran<<elem[0]
+       sabran<<elem[0]
       end
     end
  return sabran
@@ -1295,3 +1296,77 @@ puts last_index("octagon", "o")    #=> 5
 puts last_index("programming", "m")#=> 7
 puts last_index("abca", "a")       #=> 3
 puts last_index("mississipi", "i") #=> 9
+
+49.Most Vowels
+#Write a method most_vowels that takes in a sentence string and returns the word of the sentence that contains the most vowels.
+
+
+def most_vowels(word)
+  base_count = 0
+  vowels = "aeiou"
+  str = ''
+  splited = word.split(" ")
+
+  
+  splited.each_with_index do |char, i|
+   calculated = numbers_of_vowels(char)
+    
+    if calculated > base_count
+      
+      base_count = calculated
+      str = char
+    end
+    
+  end
+  
+  return p str
+end
+
+
+def numbers_of_vowels(char)
+counter = 0
+vowels = 'aeiou'
+  
+  char.each_char do |w|
+    
+    if vowels.include?(w)
+       counter += 1
+      
+    end
+  end
+  
+  return counter
+end
+
+print most_vowels("what a wonderful life") #=> "wonderful"
+
+
+50.Prime
+#Write a method prime? that takes in a number and returns a boolean, indicating whether the number is prime.
+#A prime number is only divisible by 1 and itself.
+
+def prime?(num)
+    if num < 2
+     return false
+    end
+
+  (2...num).each do |factor|
+     (2...num).each do |f|
+    
+        if factor*f == num
+          return false
+         
+         end
+      end
+    end
+  
+  return true
+ end
+
+
+puts prime?(2)  #=> true
+puts prime?(5)  #=> true
+puts prime?(11) #=> true
+puts prime?(4)  #=> false
+puts prime?(9)  #=> false
+puts prime?(-5) #=> false
