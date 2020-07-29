@@ -38,11 +38,15 @@ puts either_only(30) # => false
 
 
 def larger_number(num1, num2)
+  
   if num1 > num2
+    
     return num1
   else 
+    
     return num2
   end
+  
 end
 
 puts larger_number(42, 28)   # => 42
@@ -58,10 +62,14 @@ puts larger_number(99, 100)  # => 100
 
 
 def longer_string(str1, str2)
-  if str1.length >= str2.length
-    return str1
- else return str2
- end
+  
+   if str1.length >= str2.length
+     return str1
+     
+   else
+     return str2
+     
+  end
 end
 
 puts longer_string("app", "academy") # => "academy"
@@ -663,11 +671,11 @@ def format_name(str)
   
   first_second_name = []
   
-  name = str.split(" ")
+   name = str.split(" ")
   
-  print name[0][1..-1]
+   name[0][1..-1]
   
-end
+  end
 
 puts format_name("chase WILSON") # => "Chase Wilson"
 puts format_name("brian CrAwFoRd scoTT") # => "Brian Crawford Scott"
@@ -736,7 +744,7 @@ if elem === '@'
 
  elsif elem === '.' 
    br+=1
-  end
+ end
 
 end
 
