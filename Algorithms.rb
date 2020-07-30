@@ -1084,32 +1084,30 @@ puts hand_score("AQAJ") #=> 11
 puts hand_score("jJka") #=> 9
 
 
+
 41.Frequent Letters
 #Write a method frequent_letters that takes in a string and returns an array containing the characters that appeared more than twice in the string
 
 
 def frequent_letters(string)
-   rray = []
-  count = Hash.new(0)
-  
-  string.each_char { |char| count[char] += 1 }           
-    
-sorted = count.sort_by {  |k,v| v }
-print sorted
-sabran = []
-  
-sorted.each_with_index do |elem, idx|
-      if elem[1]>2
-       sabran<<elem[0]
-      end
-    end
- return sabran
+  counter = Hash.new(0)
+  arr=[]
+  string.each_char {  |char| counter[char] += 1 }
+
+ s = counter.sort_by { |k,v| v }
+ s.each do |el|
+    if el[1] > 2
+      arr << el[0]
+   end
+ end
+  return arr
 end
 
 print frequent_letters('mississippi') #=> ["i", "s"]
 puts
 print frequent_letters('bootcamp') #=> []
 puts
+
 
 
 41.Hash To Pairs
