@@ -875,13 +875,14 @@ puts two_d_sum(array_2)   # => 15
 
 
 def two_d_translate(arr)
-    str=[]
+    str = []
 
-   arr.each_with_index do |el, idx1|
+   arr.each do |el|
      el[-1].times do
        str<<el[0]
      end
    end
+  
 return str
 end
   
@@ -1351,6 +1352,7 @@ end
 print most_vowels("what a wonderful life") #=> "wonderful"
 
 
+
 50.Prime
 #Write a method prime? that takes in a number and returns a boolean, indicating whether the number is prime.
 #A prime number is only divisible by 1 and itself.
@@ -1381,3 +1383,80 @@ puts prime?(11) #=> true
 puts prime?(4)  #=> false
 puts prime?(9)  #=> false
 puts prime?(-5) #=> false
+
+
+
+51.Pick Primes
+#Write a method pick_primes that takes in an array of numbers and returns a new array containing only the prime numbers.
+
+def pick_primes(numbers) 
+    
+   return prime_nuimbers = numbers.select do |el| 
+     
+   prime?(el)
+     
+   end
+end
+
+
+def prime?(num)
+  if num < 2
+    return false
+  end
+
+  (2...num).each do |factor|
+     (2...num).each do |f|
+    
+        if factor * f == num
+          return false
+        end
+      
+      end
+   end
+ 
+  return true
+end
+
+print pick_primes([2, 3, 4, 5, 6]) #=> [2, 3, 5]
+puts
+print pick_primes([101, 20, 103, 2017]) #=> [101, 103, 2017]
+puts
+
+
+
+52.Greatest Factor Array
+#Write a method greatest_factor_array that takes in an array of numbers and returns a new array where every even number is replaced with it's greatest factor.
+#A greatest factor is the largest number that divides another with no remainder. For example the greatest factor of 16 is 8. 
+#(For the purpose of this problem we won't say the greatest factor of 16 is 16, because that would be too easy, ha)
+
+
+def greatest_factor_array(arr)
+
+ array_of_factors = []
+
+ arr.each do |el|
+  num = factors_array(el)
+  array_of_factors << num
+ end
+   return array_of_factors
+ end
+
+
+def factors_array(el)
+  arr = []
+   
+  (2...el).each do |n|
+     if  el % 2 != 0 
+      arr << el
+    elsif el % n == 0
+     arr << n
+    end
+
+  end
+  return  arr[-1]
+end
+
+print greatest_factor_array([16, 7, 9, 14]) # => [8, 7, 9, 7]
+puts
+print greatest_factor_array([30, 3, 24, 21, 10]) # => [15, 3, 12, 21, 5]
+puts
