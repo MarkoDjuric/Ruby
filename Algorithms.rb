@@ -880,31 +880,24 @@ puts two_d_sum([[3, 3],[2],[2, 5]])   # => 15
 def two_d_translate(arr)
     str = []
 
-   arr.each do |el|
+   arr.each do |el| 
+     
      el[-1].times do
-       str<<el[0]
+       
+       str << el[0]
+       
      end
+     
    end
   
-return str
+ return str
 end
   
  
-arr_1 = [
-  ['boot', 3],
-  ['camp', 2],
-  ['program', 0]
-]
-
-print two_d_translate(arr_1) # => [ 'boot', 'boot', 'boot', 'camp', 'camp' ]
+print two_d_translate([['boot', 3],['camp', 2],['program', 0]]) # => [ 'boot', 'boot', 'boot', 'camp', 'camp' ]
 puts
 
-arr_2 = [
-  ['red', 1],
-  ['blue', 4]
-]
-
-print two_d_translate(arr_2) # => [ 'red', 'blue', 'blue', 'blue', 'blue' ]
+print two_d_translate([['red', 1],['blue', 4]]) # => [ 'red', 'blue', 'blue', 'blue', 'blue' ]
 puts
 
 
