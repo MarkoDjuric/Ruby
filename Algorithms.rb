@@ -1142,29 +1142,16 @@ puts
 #Solve this using a hash.
 
 
-# Hint: all keys of a hash are automatically unique
-
 def unique_elements(arr)
-
-  counter = Hash.new(0)
+  hash_elements = {}
   
-  arr.each { |elem| counter[elem]+=1 }
-    
-  
-  sorted =  counter.sort_by { |k,v| k   }
-  
-    array=[]
-  
-   sorted.each_with_index do |elem1, idx|
-   print array<<elem1[0]  
-     
-  end
-  return array
-
+  arr.each { |ele| hash_elements[ele] = true }
+  return hash_elements.keys
 end
 
- unique_elements(['a', 'b', 'a', 'a', 'b', 'c']) #=> ["a", "b", "c"]
+print unique_elements(['a', 'b', 'a', 'a', 'b', 'c']) #=> ["a", "b", "c"]
 puts
+
 
 
 43.Map By Name
