@@ -822,26 +822,31 @@ puts reverse_words('simplicity is prerequisite for reliability') # => 'yticilpmi
 
 
 
-
 30.Opposite Count
 #Write a method opposite_count that takes in an array of unique numbers. 
 #The method should return the number of pairs of elements that sum to 0.
 
 
 def opposite_count(nums)
-counter=0
+    counter=0
+  
   nums.each_with_index do |num1, idx1|
-    nums.each_with_index do |num2, idx2|
+    nums.each_with_index do |num2, idx2| 
+      
       if idx2>idx1 && num1 === -1*num2
-       counter+=1
+         counter+=1
+        
       end
+      
     end
   end
-return counter
+  
+ return counter
 end
 
 puts opposite_count([ 2, 5, 11, -5, -2, 7 ]) # => 2
 puts opposite_count([ 21, -23, 24 -12, 23 ]) # => 1
+
 
 
 31.Two D Sum
@@ -849,24 +854,22 @@ puts opposite_count([ 21, -23, 24 -12, 23 ]) # => 1
 
 
 def two_d_sum(arr)
-  counter=0
+  counter = 0
+  
   arr.each_with_index do |arr1, idx1|
     arr1.each_with_index do |arr2, idx2|
+      
       counter+=arr2
+      
     end
   end
+  
 return counter
 end
 
-array_1 = [ [4, 5],[1, 3, 7, 1]]
-puts two_d_sum(array_1)    # => 21
 
-array_2 = [
-  [3, 3],
-  [2],
-  [2, 5]
-]
-puts two_d_sum(array_2)   # => 15
+puts two_d_sum([ [4, 5],[1, 3, 7, 1]])    # => 21
+puts two_d_sum([[3, 3],[2],[2, 5]])   # => 15
 
 
 31.Two D Translate
