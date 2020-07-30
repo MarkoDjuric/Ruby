@@ -877,9 +877,9 @@ puts two_d_sum(array_2)   # => 15
 def two_d_translate(arr)
     str=[]
 
-   arr.each_with_index do |elem_1, idx1|
-     elem_1[-1].times do
-       str<<elem_1[0]
+   arr.each_with_index do |el, idx1|
+     el[-1].times do
+       str<<el[0]
      end
    end
 return str
@@ -911,7 +911,7 @@ puts
 
 def get_double_age(hash)
 
-return hash["age"]*2
+  return hash["age"] * 2
   
 end
 
