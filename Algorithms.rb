@@ -877,9 +877,9 @@ puts two_d_sum(array_2)   # => 15
 def two_d_translate(arr)
     str=[]
 
-   arr.each_with_index do |elem1, idx1|
-     elem1[-1].times do
-       str<<elem1[0]
+   arr.each_with_index do |elem_1, idx1|
+     elem_1[-1].times do
+       str<<elem_1[0]
      end
    end
 return str
@@ -1092,7 +1092,7 @@ puts hand_score("jJka") #=> 9
 
 
 def frequent_letters(string)
- rray=[]
+   rray = []
   count = Hash.new(0)
   
   string.each_char { |char| count[char] += 1 }           
@@ -1305,6 +1305,8 @@ puts last_index("programming", "m")#=> 7
 puts last_index("abca", "a")       #=> 3
 puts last_index("mississipi", "i") #=> 9
 
+
+
 49.Most Vowels
 #Write a method most_vowels that takes in a sentence string and returns the word of the sentence that contains the most vowels.
 
@@ -1354,6 +1356,7 @@ print most_vowels("what a wonderful life") #=> "wonderful"
 #A prime number is only divisible by 1 and itself.
 
 def prime?(num)
+  
     if num < 2
      return false
     end
