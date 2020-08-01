@@ -1497,3 +1497,81 @@ end
 
 print summation_sequence(3, 4) # => [3, 6, 21, 231]
 print summation_sequence(5, 3) # => [5, 15, 120]
+
+
+54.Fibonacci
+#The fibonacci sequence is a sequence of numbers whose first and second elements are 1. 
+#To generate further elements of the sequence we take the sum of the previous two elements. 
+#For example the first 6 fibonacci numbers are 1, 1, 2, 3, 5, 8. 
+#Write a method fibonacci that takes in a number length and returns the fibonacci sequence up to the given length.
+
+
+def fibonacci(length)
+  fibonacci_array = []
+  counter = 1
+  
+  if length < 1
+    
+    return []
+    
+  elsif length == 1
+    
+    return  fibonacci_array << 1 
+    
+  elsif length > 1
+    
+     fibonacci_array << 1 << 1
+    
+       (1...length-1).each do |num|
+       
+         last =  fibonacci_array[-1] + fibonacci_array[-2]
+       
+           fibonacci_array << last
+       
+ 
+         end
+
+   end
+      
+  return   fibonacci_array
+  end
+  
+print fibonacci(0) # => []
+puts
+print fibonacci(1) # => [1]
+puts
+print fibonacci(6) # => [1, 1, 2, 3, 5, 8]
+puts
+print fibonacci(8) # => [1, 1, 2, 3, 5, 8, 13, 21]
+puts
+
+
+55.Caesar Cipher
+#Write a method caesar_cipher that takes in a string and a number. 
+#The method should return a new string where every character of the original is shifted num characters in the alphabet
+
+
+# Feel free to use this variable:
+# alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+def caesar_cipher(str, num)
+   final_str = ''
+  
+   alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+   alphastr = alphabet[alphabet.index('y')..-1] + alphabet[0..-1]
+
+  
+str.each_char.with_index do |el, idx|
+  final_str +=   alphastr[alphastr.index(el) + num]
+  end
+
+return  final_str 
+end
+
+puts caesar_cipher("apple", 1)    #=> "bqqmf"
+puts caesar_cipher("bootcamp", 2) #=> "dqqvecor"
+puts caesar_cipher("zebra", 4)    #=> "difve"
+
+
+56.
