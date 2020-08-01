@@ -114,6 +114,23 @@ whisper sords
 
 last index
 
+most vowels
+
+prime number
+
+pick primes
+
+greatest factor array
+
+triple sequence
+
+summation sequence
+
+fibonacci
+
+ceaser chiper
+
+
 
 
 
