@@ -130,6 +130,10 @@ fibonacci
 
 ceaser chiper
 
+double letter count
+
+adjacent sum
+
 
 
 
