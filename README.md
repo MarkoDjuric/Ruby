@@ -134,6 +134,10 @@ double letter count
 
 adjacent sum
 
+pyramid sum
+
+anagrams
+
 
 
 
