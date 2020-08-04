@@ -1223,8 +1223,6 @@ def yell_sentence(sent)
   
     print  sentence.join(" ")
   
-  puts
-
 end
 
 puts yell_sentence("I have a bad feeling about this") #=> "I! HAVE! A! BAD! FEELING! ABOUT! THIS!"
@@ -1340,9 +1338,9 @@ print most_vowels("what a wonderful life") #=> "wonderful"
 
 def prime?(num)
   
-    if num < 2
+   if num < 2
      return false
-    end
+   end
 
   (2...num).each do |factor|
      (2...num).each do |f|
@@ -1350,9 +1348,9 @@ def prime?(num)
         if factor*f == num
           return false
          
-         end
-      end
-    end
+        end
+     end
+   end
   
   return true
  end
@@ -1628,4 +1626,97 @@ print adjacent_sum([2, 5, 1, 9, 2, 4]) #=> [7, 6, 10, 11, 6], because [2+5, 5+1,
 puts
 
 
+
 58.Pyramid Sum
+#Write a method pyramid_sum that takes in an array of numbers representing the base of a pyramid. 
+#The function should return a 2D array representing a complete pyramid with the given base. 
+#To construct a level of the pyramid, we take the sum of adjacent elements of the level below.
+
+
+
+# For example, the base [1, 4, 6] gives us the following pyramid
+#     15
+#   5   10
+# 1   4    6
+
+def pyramid_sum(arr)
+   pyramid_arr = []
+   pyramid_arr << arr
+
+   refresh = 0
+
+  while refresh < arr.length-1
+   
+       first = 0
+       second = 1
+       sum = []
+
+      i = 0
+    while i < arr.length-1
+  
+    
+     sum << summning(arr[first..second])
+     
+     i+=1
+     first +=1
+     second +=1
+
+    end
+    
+     arr = sum
+ 
+     pyramid_arr << sum
+  end
+  
+   refresh +=1
+
+  return  pyramid_arr.reverse 
+end
+
+
+def summning(el)
+
+  return  el[0] + el[1]
+end
+
+
+print pyramid_sum([1, 4, 6]) #=> [[15], [5, 10], [1, 4, 6]]
+puts
+
+print pyramid_sum([3, 7, 2, 11]) #=> [[41], [19, 22], [10, 9, 13], [3, 7, 2, 11]]
+puts
+
+
+
+59.All Else Equal
+#Write a method all_else_equal that takes in an array of numbers. The method should return the element of the array that is equal to half of the sum of all elements of the array.
+#If there is no such element, the method should return nil.
+
+
+def all_else_equal(arr)
+
+  num = 0
+  num_arr = 0
+  
+  arr.each_with_index do |el, i|
+   
+    num_arr += el
+    
+  end
+ 
+    num = num_arr / 2
+  arr.length.times do  |n| 
+    if arr[n] == num
+      return num
+    end
+   
+end
+  return nil
+end
+
+p all_else_equal([2, 4, 3, 10, 1]) #=> 10, because the sum of all elements is 20
+p all_else_equal([6, 3, 5, -9, 1]) #=> 3, because the sum of all elements is 6
+p all_else_equal([1, 2, 3, 4])     #=> nil, because the sum of all elements is 10 and there is no 5 in the array
+
+
+60.
