@@ -1,6 +1,6 @@
 # Ruby Algorithms 
 
-Here are my solutions of all these algorithms
+There are my own solutions of all these algorithms:
  
 either_only
 
