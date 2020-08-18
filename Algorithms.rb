@@ -1,6 +1,5 @@
 
 1.Either Only 
-
 #Write a method either_only(number) that takes in a number and returns true 
 #if the number is divisible by either 3 or 5, but not both. 
 #The method should return false otherwise.
@@ -32,7 +31,6 @@ puts either_only(30) # => false
 
 
 2.Larger Number
-
 #Write a method larger_number(num1, num2) that takes in two numbers 
 #and returns the larger of the two numbers.
 
@@ -55,7 +53,6 @@ puts larger_number(99, 100)  # => 100
 
 
 3.Longer String
-
 #Write a method longer_string(str1, str2) that takes in two strings 
 #and returns the longer of the two strings. In the case of a tie, 
 #the method should return the first string.
@@ -78,7 +75,6 @@ puts longer_string("hello", "world") # => "hello"
 
 
 4.Number Check
-
 #Write a method number_check(num) that takes in a number and returns a string. 
 #The method should return the string 'positive' if the num is positive, 'negative' 
 #if the num is negative, and 'zero' if the num is zero.
@@ -100,7 +96,6 @@ puts number_check(0)    # => "zero"
 
 
 5.Word Check
-
 #Write a method word_check(word) that takes in a word and returns a string. 
 #The method should return the string "long" if the word is longer than 6 characters, 
 #"short" if it is less than 6 characters, and "medium" if it is exactly 6 characters long.
@@ -122,7 +117,6 @@ puts word_check("puzzle")      # => "medium"
 
 
 6.Count E
-
 #Write a method count_e(word) that takes in a string word 
 #and returns the number of e's in the word
 
@@ -146,13 +140,12 @@ puts count_e("excellent") # => 3
 
 
 7.Count A
-
 #Write a method count_a(word) that takes in a string word and returns the number of a's in the word. 
 #The method should count both lowercase (a) and uppercase (A)
 
 
 def count_a(word)
-counter = 0
+  counter = 0
   i = 0
   
   while i  < word.length
@@ -172,13 +165,12 @@ puts count_a("Aardvark")     # => 3
 
 
 8.Count Vowels
-
 #Write a method, count_vowels(word), that takes in a string word and returns the number of vowels in the word.
 #Vowels are the letters a, e, i, o, u
 
 
 def count_vowels(word)
-counter = 0
+ counter = 0
   i = 0
   while i  < word.length
      if word[i] == 'a' || word[i] == 'e' || word[i] == 'i'|| word[i] == 'o'|| word[i] == 'u'
@@ -195,7 +187,6 @@ puts count_vowels("pizza")     # => 2
 
 
 9.Sum Nums
-
 #Write a method sum_nums(max) that takes in a number max and returns the sum of all numbers 
 #from 1 up to and including max.
 
@@ -215,8 +206,8 @@ puts sum_nums(6) # => 10, because 1 + 2 + 3 + 4 = 10
 puts sum_nums(5) # => 15
 
 
-10.Factorial
 
+10.Factorial
 #Write a method factorial(num) that takes in a number num and returns the product of all numbers 
 #from 1 up to and including num.
 
@@ -236,8 +227,8 @@ end
 puts factorial(3) # => 6, because 1 * 2 * 3 = 6
 puts factorial(5) # => 120, because 1 * 2 * 3 * 4 * 5 = 120
 
-10.Reverse
 
+10.Reverse
 #Write a method reverse(word) that takes in a string word and returns the word with its letters in reverse order.
 
 
@@ -259,6 +250,8 @@ puts reverse("bootcamp")     # => "pmactoob"
 
 
 11.Is Palindrome
+#Write a method is_palindrome(word) that takes in a string word and returns the true if the word is a palindrome, false otherwise.
+#A palindrome is a word that is spelled the same forwards and backwards.
 
 
 def is_palindrome(word)
@@ -280,7 +273,6 @@ puts is_palindrome("anaaaaad") # => false
 
 
 12.Yell
-
 #Write a method yell(words) that takes in an array of words and returns a
 #new array where every word from the original array has an exclamation point after it.
 
@@ -301,11 +293,10 @@ puts
 print yell(["code", "is", "cool"]) # => ["code!", "is!", "cool!"]
 
 
-
 13.Element Times Index
-
 #Write a method element_times_index(nums) that takes in an array of numbers 
 #and returns a new array containing every number of the original array multiplied with its index.
+
 
 def element_times_index(numbers)
     concated_numbers = []
@@ -324,9 +315,7 @@ puts
 print element_times_index([1, 1, 1, 1, 1, 1]) # => [0, 1, 2, 3, 4, 5]
 
 
-
 14. Even Nums
-
 #Write a method even_nums(max) that takes in a number max 
 #and returns an array containing all even numbers from 0 to max.
 
@@ -352,9 +341,7 @@ puts
 print even_nums(5)  # => [0, 2, 4]
 
 
-
-15. Range
-
+15.Range
 #Write a method range(min, max) that takes in two numbers min and max. 
 #The function should return an array containing all numbers from min to max inclusive.
 
@@ -378,8 +365,7 @@ puts
 print range(13, 20) # => [13, 14, 15, 16, 17, 18, 19, 20]
 
 
-
-16. Odd Range
+16.Odd Range
 #Write a method odd_range(min, max) that takes in two numbers min and max. 
 #The method should return an array containing all odd numbers from min to max (inclusive).
 
@@ -406,7 +392,7 @@ print odd_range(3, 7)   # => [3, 5, 7]
 
 
 
-17. Reverse Range
+17.Reverse Range
 #Write a method reverse_range(min, max) that takes in two numbers min and max. 
 #The function should return an array containing all numbers from min to max in reverse order. 
 #The min and max should be excluded from the array.
@@ -431,7 +417,7 @@ print reverse_range(1, 7)   # => [6, 5, 4, 3, 2]
 
 
 
-18. First Half
+18.First Half
 
 #Write a method first_half(array) that takes in an array and returns a new array containing 
 #the first half of the elements in the array. If there is an odd number of elements, 
@@ -465,8 +451,7 @@ print first_half(["a", "b", "c", "d", "e"])          # => ["a", "b", "c"]
 
 
 
-19. Factors Of
-
+19.Factors Of
 #Write a method factors_of(num) that takes in a num and returns an array of all positive numbers 
 #less than or equal to num that can divide num.
 
@@ -500,9 +485,7 @@ puts
 print factors_of(16)  # => [1, 2, 4, 8, 16]
 
 
-
 20. Select Odds
-
 #Write a method select_odds(numbers) that takes in an array of numbers and 
 #returns a new array containing the odd numbers of the original array.
 
@@ -533,9 +516,7 @@ puts
 print select_odds([2, 4, 6])            # => []
 
 
-
-21. Select Long Words
-
+21.Select Long Words
 #Write a method select_long_words(words) that takes in an array of words 
 #and returns a new array containing all of the words of the original array that are longer than 4 characters.
 
@@ -560,9 +541,7 @@ puts
 print select_long_words(["keep", "coding"])                               # => ["coding"]
 
 
-
-22. Sum Elements
-
+22.Sum Elements
 #Write a method sum_elements(arr1, arr2) that takes in two arrays. 
 #The method should return a new array containing the results of adding together corresponding elements of the original arrays. You can assume the arrays have the same length.
 
@@ -590,8 +569,7 @@ puts
 print sum_elements(["cat", "pizza", "boot"], ["dog", "pie", "camp"]) # => ["catdog", "pizzapie", "bootcamp"]
 
 
-23. Fizz Buzz
-
+23.Fizz Buzz
 #Write a method fizz_buzz(max) that takes in a number max and returns an array 
 #containing all numbers greater than 0 and less than max that are divisible by either 4 or 6, but not both
 
@@ -618,8 +596,7 @@ puts
 print fizz_buzz(15) # => [4, 6, 8]
 
 
-
-24. To Initials
+24.To Initials
 #Write a method to_initials that takes in a person's name string and returns a string representing their initials.
 
 
@@ -636,8 +613,7 @@ puts to_initials("Michaela Yamamoto")   # => "MY"
 puts to_initials("Mary La Grange")      # => "MLG"
 
 
-
-25. First in Array
+25.First in Array
 #Write a method first_in_array that takes in an array and two elements, 
 #the method should return the element that appears earlier in the array.
 
@@ -658,13 +634,11 @@ puts first_in_array(["a", "b", "c", "d"], "d", "b"); # => "b"
 puts first_in_array(["cat", "bird" ,"dog", "mouse" ], "dog", "mouse"); # => "dog"
 
 
-
-26. Format Name
+26.Format Name
 #Write a method format_name that takes in a name string and returns the name properly capitalized.
-
-
 # Hint: use str.upcase and str.downcase
 # "abc".upcase # => "ABC"
+
 
 def format_name(str)
   name = []
@@ -681,8 +655,7 @@ puts format_name("chase WILSON") # => "Chase Wilson"
 puts format_name("brian CrAwFoRd scoTT") # => "Brian Crawford Scott"
 
 
-
-27. Is Valid Name
+27.Is Valid Name
 #Write a method is_valid_name that takes in a string and returns a boolean indicating whether 
 #or not it is a valid name.
 
@@ -718,7 +691,6 @@ puts is_valid_name("Robert Downey Jr") # => true
 puts is_valid_name("ROBERT DOWNEY JR") # => false
 
 
-
 28.Is Valid Email
 #Write a method is_valid_email that takes in a string and returns a boolean 
 #indicating whether or not it is a valid email address.
@@ -729,6 +701,7 @@ puts is_valid_name("ROBERT DOWNEY JR") # => false
 # - contains exactly one @ symbol
 # - contains only lowercase alphabetic letters before the @
 # - contains exactly one . after the @
+
 
 def is_valid_email(str) 
 brojevi = ['1','2','3','4','5','6','7','8','9','0']
