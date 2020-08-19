@@ -1754,3 +1754,34 @@ puts consonant_cancel("down the rabbit hole") #=> "own e abbit ole"
 puts consonant_cancel("writing code is challenging") #=> "iting ode is allenging"
 
 
+62.Same Char Collapse
+#Write a method same_char_collapse that takes in a string and returns a collapsed version of the string. 
+#To collapse the string, we repeatedly delete 2 adjacent characters that are the same until there are no such adjacent characters. 
+#If there are multiple pairs that can be collapsed, delete the leftmost pair. For example, we take the following steps to collapse "zzzxaaxy": zzzxaaxy -> zxaaxy -> zxxy -> zy
+
+def same_char_collapse(str)
+  arr = []
+  counter = Hash.new(0)
+  
+  str.each_char { |char| counter[char] += 1}
+  
+   counter.each do |k, v|
+    if v == 1
+      arr << k
+    elsif v % 2 !=0
+      arr << k
+  end
+   end
+  return  arr.join("")
+end
+
+puts same_char_collapse("zzzzzxaaxy")   #=> "zy"
+# because zzzxaaxy -> zxaaxy -> zxxy -> zy
+
+
+puts same_char_collapse("uqrssrqvtt") #=> "uv"
+# because uqrssrqvtt -> uqrrqvtt -> uqqvtt -> uvtt -> uv
+
+
+
+
