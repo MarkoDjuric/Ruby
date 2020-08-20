@@ -465,9 +465,8 @@ def factors_of(num)
   while i <= num
     
     if num % i == 0 
-    array_positive << i
-      
-  end
+     array_positive << i
+    end
     i+=1
   end
   
@@ -493,23 +492,20 @@ print factors_of(16)  # => [1, 2, 4, 8, 16]
 def select_odds(numbers)
   
   array_odds = []
+  
   i = 0
   
   while i < numbers.length
     
     if numbers[i] % 2 != 0
-      
       array_odds << numbers[i]
-      
-     end
+    end
     
      i+=1
-    
    end
   
   return  array_odds
-  
-end
+ end
 
 print select_odds([13, 4, 3, 7, 6, 11]) # => [13, 3, 7, 11]
 puts
@@ -531,9 +527,11 @@ def select_long_words(words)
     if words[i].length > 4
        four_caracters << words[i]
     end
+    
     i+=1
   end
-    return four_caracters
+  
+   return four_caracters
 end
 
 print select_long_words(["what", "are", "we", "eating", "for", "dinner"]) # => ["eating", "dinner"]
@@ -727,22 +725,22 @@ if asterix === 1 && br === 1
 
 
 niz.each do |elem|
+  brojevi.each do |item|
+    if elem === item
+      seekedNumber+=1
+    end
+   end
+end
 
-brojevi.each do |item|
+  if seekedNumber>0
+    return false
+  else
+    return true
+  end
 
-
-if elem === item
-seekedNumber+=1
-end
-end
-end
-if seekedNumber>0
-return false
-else
-return true
-end
  else
-return false
+
+ return false
 end
 
 end
@@ -753,6 +751,79 @@ puts is_valid_email("jdoe@g@mail.com")  # => false
 puts is_valid_email("jdoe42@gmail.com") # => false
 puts is_valid_email("jdoegmail.com")    # => false
 puts is_valid_email("az@email")         # => false
+
+
+28.Is Valid Email(secind solution)
+#Write a method is_valid_email that takes in a string and returns a boolean 
+#indicating whether or not it is a valid email address.
+
+
+
+# For simplicity, we'll consider an email valid when it satisfies all of the following:
+# - contains exactly one @ symbol
+# - contains only lowercase alphabetic letters before the @
+# - contains exactly one . after the @
+
+def is_valid_email(str)
+  
+   #positions
+   idxasterix = str.index('@')
+   idxpoint = str.index('.')
+  
+   asterix = '@'
+   point = '.'
+  
+   
+  if !str.include?(asterix) || !str.include?(point)
+     return false
+  end
+
+    numbers_validation =  check_num(str)
+    numbers_of_asterix_and_points = counter(str)
+
+if numbers_of_asterix_and_points == false ||  numbers_validation  == false
+  return false
+else
+  return true
+end
+
+end
+ 
+
+def check_num(str)
+   str.each_char.with_index do |el, i|
+     if '1234567890'.include?(el)
+           return false
+     end
+  end
+  return true
+end
+
+def counter(str)
+  astr = 0
+  pont = 0
+
+  str.each_char do |el|
+    if el == '@' 
+      astr += 1
+    elsif el == '.'
+     pont += 1
+    end
+  end
+  
+  if astr > 1 || pont > 1
+    return false
+  end
+end
+
+
+puts is_valid_email("abc@xy.z")         # => true
+puts is_valid_email("jdoe@gmail.com")   # => true
+puts is_valid_email("jdoe@g@mail.com")  # => false
+puts is_valid_email("jdoe42@gmail.com") # => false
+puts is_valid_email("jdoegmail.com")    # =>  false
+puts is_valid_email("az@email")         # => false
+
 
 
 
@@ -1013,6 +1084,7 @@ puts element_count(["red", "red", "blue", "green"]) #=> {"red"=>2, "blue"=>1, "g
 
 def select_upcase_keys(hash)
   obj=Hash.new(0)
+  
   hash.each do |key, value|
    if key === key.upcase
     obj[key]=value
