@@ -1,4 +1,4 @@
-#  _ Intro to Programming _  Ruby Algorithms 
+#  Intro to Programming  - Ruby Algorithms !
 
 There are my own solutions of all these algorithms:
  
