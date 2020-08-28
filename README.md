@@ -2,29 +2,29 @@
 
 Here are all my algorithm solutions: https://github.com/MarkoDjuric/Ruby-Algorithms-/blob/master/Algorithms.rb
  
-either_only
+1.either_only
 
-larger_number
+2.larger_number
 
-longer_string
+3.longer_string
 
-number_check
+4.number_check
 
-word_check
+5.word_check
 
-count_e
+6.count_e
 
-count_a
+7.count_a
 
-count_vowels
+8.count_vowels
 
-sum_nums
+9.sum_nums
 
-factorial
+10.factorial
 
-reverse
+11.reverse
 
-is palindrome
+12.is palindrome
 
 get double age
 
