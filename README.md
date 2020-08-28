@@ -1,6 +1,6 @@
 #  Intro to Programming  - Ruby Algorithms !
 
-Here are all my algorithm solutions: https://github.com/MarkoDjuric/Ruby-Algorithms-/blob/master/Algorithms.rb
+[Here are all my algorithm solutions] ( https://github.com/MarkoDjuric/Ruby-Algorithms-/blob/master/Algorithms.rb)
 
  
 1.Either_only
