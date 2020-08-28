@@ -1,32 +1,33 @@
 #  Intro to Programming  - Ruby Algorithms !
 
 Here are all my algorithm solutions: https://github.com/MarkoDjuric/Ruby-Algorithms-/blob/master/Algorithms.rb
+
  
-1.either_only
+1.Either_only
 
-2.larger_number
+2.Larger_number
 
-3.longer_string
+3.Longer_string
 
-4.number_check
+4.Number_check
 
-5.word_check
+5.Word_check
 
-6.count_e
+6.Count_e
 
-7.count_a
+7.Count_a
 
-8.count_vowels
+8.Count_vowels
 
-9.sum_nums
+9.Sum_nums
 
-10.factorial
+10.Factorial
 
-11.reverse
+11.Reverse
 
-12.is palindrome
+12.Is palindrome
 
-get double age
+13.get double age
 
 get full name
 
