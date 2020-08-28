@@ -1,6 +1,6 @@
 #  Intro to Programming  - Ruby Algorithms !
 
-Here are all my own[algorithms solutions](https://github.com/MarkoDjuric/Ruby-Algorithms-/blob/master/Algorithms.rb).They are sorted by weight so that they go from light to heavier Some are done twoce so that they have shortert and better solution !
+Here are all my own [algorithms solutions](https://github.com/MarkoDjuric/Ruby-Algorithms-/blob/master/Algorithms.rb). They are sorted by weight so that they go from light to heavier. Some are done twice so that they have shortert and better solution ! They really helped me to understand program logic.
 
  
 1. Either_only
