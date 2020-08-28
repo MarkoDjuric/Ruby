@@ -1,6 +1,6 @@
 #  Intro to Programming  - Ruby Algorithms !
 
-Here are all my [algorithms solutions](https://github.com/MarkoDjuric/Ruby-Algorithms-/blob/master/Algorithms.rb).They are sorted by weight so that they go from light to heavier Some are done twoce so that they have shortert and better solution !
+Here are all my own[algorithms solutions](https://github.com/MarkoDjuric/Ruby-Algorithms-/blob/master/Algorithms.rb).They are sorted by weight so that they go from light to heavier Some are done twoce so that they have shortert and better solution !
 
  
 1. Either_only
@@ -29,13 +29,13 @@ Here are all my [algorithms solutions](https://github.com/MarkoDjuric/Ruby-Algor
 
 13. Get double age
 
-get full name
+14.Get full name
 
-world leghts
+15. World leghts
 
-doubler
+16. Doubler
 
-yell
+17. Yell
 
 element time index
 
