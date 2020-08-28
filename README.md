@@ -3,31 +3,31 @@
 [Here are all my algorithm solutions] (https://github.com/MarkoDjuric/Ruby-Algorithms-/blob/master/Algorithms.rb)
 
  
-1.Either_only
+1. Either_only
 
-2.Larger_number
+2. Larger_number
 
-3.Longer_string
+3. Longer_string
 
-4.Number_check
+4. Number_check
 
-5.Word_check
+5. Word_check
 
-6.Count_e
+6. Count_e
 
-7.Count_a
+7. Count_a
 
-8.Count_vowels
+8. Count_vowels
 
-9.Sum_nums
+9. Sum_nums
 
-10.Factorial
+10. Factorial
 
-11.Reverse
+11. Reverse
 
-12.Is palindrome
+12. Is palindrome
 
-13.get double age
+13. Get double age
 
 get full name
 
