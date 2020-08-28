@@ -233,16 +233,40 @@ puts factorial(5) # => 120, because 1 * 2 * 3 * 4 * 5 = 120
 
 
 def reverse(word)
+  counter = ''
+  
   
   i = 1
-  counter = ''
   while i <= word.length
+    counter += word[word.length-i]
     
- counter+= word[word.length-i]
-    i+=1
+    i += 1
+  end
+  
+  return counter
  end
-    return counter
- end
+
+puts reverse("cat")          # => "tac"
+puts reverse("programming")  # => "gnimmargorp"
+puts reverse("bootcamp")     # => "pmactoob"
+
+
+10.Revese(SECOND SOLUTION)
+
+def reverse(word)
+  reversed = ""
+
+  i = 0
+  while i < word.length
+    char = word[i]
+    
+    reversed = char + reversed  # put element at the end of string with each iteration, not at the start as usual.
+
+    i += 1
+  end
+
+  return reversed
+end
 
 puts reverse("cat")          # => "tac"
 puts reverse("programming")  # => "gnimmargorp"
