@@ -24,12 +24,11 @@ Here are all my own [algorithms solutions](https://github.com/MarkoDjuric/Ruby-A
 10. Factorial
 
 11. Reverse
-
 12. Is palindrome
 
 13. Get double age
 
-14.Get full name
+14. Get full name
 
 15. World leghts
 
@@ -37,31 +36,31 @@ Here are all my own [algorithms solutions](https://github.com/MarkoDjuric/Ruby-A
 
 17. Yell
 
-element time index
+18. Element time index
 
-event nums
+19. Event nums
 
-range
+20. Range
 
-odd range
+21. Odd range
 
-reverse range
+22. Reverse range
 
-first half
+23. First half
 
-factors of
+24. Factors of
 
-sum eleemnts
+25. Sum eleemnts
 
-select odds
+26. Select odds
 
-select longest words
+27. Select longest words
 
-sum elements
+28. Sum elements
 
-fizz buzz
+29. Fizz buzz
 
-to initials
+30. To initials
 
 first in array
 
