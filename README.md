@@ -62,25 +62,25 @@ Here are all my own [algorithms solutions](https://github.com/MarkoDjuric/Ruby-A
 
 30. To initials
 
-first in array
+31. First in array
 
-format name
+32. Format name
 
-is valid name
+33. Is valid name
 
-is valid email
+34. Is valid email
 
-reverse words
+35. Reverse words
 
-rotate array
+36. Rotate array
 
-opposite count
+37. Opposite count
 
-two D sum
+38. Two D sum
 
-two D translate
+39. Two D translate
 
-get full name
+40. Get full name
 
 word lengths
 
