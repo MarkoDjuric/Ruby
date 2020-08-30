@@ -24,6 +24,7 @@ Here are all my own [algorithms solutions](https://github.com/MarkoDjuric/Ruby-A
 10. Factorial
 
 11. Reverse
+
 12. Is palindrome
 
 13. Get double age
