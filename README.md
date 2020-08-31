@@ -83,25 +83,25 @@ Here are all my own [algorithms solutions](https://github.com/MarkoDjuric/Ruby-A
 
 40. Get full name
 
-word lengths
+41. Word lengths
 
-retrive values
+42. Retrive values
 
-cat builder
+43. Cat builder
 
-ae count
+44. Ae count
 
-element count
+45. Element count
 
-select upcase keys
+46. Select upcase keys
 
-hand score
+47. Hand score
 
-frequent letters
+48. Frequent letters
 
-hash to pairs
+49. Hash to pairs
 
-unique elements
+50. Unique elements
 
 map by name
 
