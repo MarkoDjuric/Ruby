@@ -103,41 +103,41 @@ Here are all my own [algorithms solutions](https://github.com/MarkoDjuric/Ruby-A
 
 50. Unique elements
 
-map by name
+52. Map by name
 
-map by key
+53. Map by key
 
-yell sentence
+54. Yell sentence
 
-whisper sords
+55. Whisper sords
 
-0 words
+56. 0 words
 
-last index
+57. Last index
 
-most vowels
+58. Most vowels
 
-prime number
+59. Prime number
 
-pick primes
+60. Pick primes
 
-greatest factor array
+61. Greatest factor array
 
-triple sequence
+62. Triple sequence
 
-summation sequence
+63. Summation sequence
 
-fibonacci
+64. Fibonacci
 
-ceaser chiper
+65. Ceaser chiper
 
-double letter count
+66. Double letter count
 
-adjacent sum
+67. Adjacent sum
 
-pyramid sum
+68. Pyramid sum
 
-anagrams
+69. Anagrams
 
 
 
