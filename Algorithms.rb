@@ -322,7 +322,7 @@ puts
 print yell(["code", "is", "cool"]) # => ["code!", "is!", "cool!"]
 
 
-13.Element Times Index
+14.Element Times Index
 #Write a method element_times_index(nums) that takes in an array of numbers 
 #and returns a new array containing every number of the original array multiplied with its index.
 
@@ -344,7 +344,7 @@ puts
 print element_times_index([1, 1, 1, 1, 1, 1]) # => [0, 1, 2, 3, 4, 5]
 
 
-14.Even Nums
+15.Even Nums
 #Write a method even_nums(max) that takes in a number max 
 #and returns an array containing all even numbers from 0 to max.
 
@@ -370,7 +370,7 @@ puts
 print even_nums(5)  # => [0, 2, 4]
 
 
-15.Range
+16.Range
 #Write a method range(min, max) that takes in two numbers min and max. 
 #The function should return an array containing all numbers from min to max inclusive.
 
@@ -394,7 +394,7 @@ puts
 print range(13, 20) # => [13, 14, 15, 16, 17, 18, 19, 20]
 
 
-16.Odd Range
+17.Odd Range
 #Write a method odd_range(min, max) that takes in two numbers min and max. 
 #The method should return an array containing all odd numbers from min to max (inclusive).
 
@@ -421,7 +421,7 @@ print odd_range(3, 7)   # => [3, 5, 7]
 
 
 
-17.Reverse Range
+18.Reverse Range
 #Write a method reverse_range(min, max) that takes in two numbers min and max. 
 #The function should return an array containing all numbers from min to max in reverse order. 
 #The min and max should be excluded from the array.
@@ -445,8 +445,7 @@ puts
 print reverse_range(1, 7)   # => [6, 5, 4, 3, 2]
 
 
-
-18.First Half
+19.First Half
 
 #Write a method first_half(array) that takes in an array and returns a new array containing 
 #the first half of the elements in the array. If there is an odd number of elements, 
@@ -480,7 +479,7 @@ print first_half(["a", "b", "c", "d", "e"])          # => ["a", "b", "c"]
 
 
 
-19.Factors Of
+20.Factors Of
 #Write a method factors_of(num) that takes in a num and returns an array of all positive numbers 
 #less than or equal to num that can divide num.
 
@@ -541,8 +540,8 @@ puts
 print select_odds([2, 4, 6])            # => []
 
 
-21.Select Long Words
-#Write a method select_long_words(words) that takes in an array of words 
+21.Select Longest Words
+#Write a method select_longest_words(words) that takes in an array of words 
 #and returns a new array containing all of the words of the original array that are longer than 4 characters.
 
 
@@ -925,7 +924,32 @@ end
 
 puts reverse_words('keep coding') # => 'peek gnidoc'
 puts reverse_words('simplicity is prerequisite for reliability') # => 'yticilpmis si etisiuqererp rof ytilibailer'
+
   
+  
+30.Rotate Array
+#Write a method rotate_array that takes in an array and a number. The method should return the array after rotating the elements the specified number of times. 
+#A single rotation takes the last element of the array and moves it to the front.
+
+  
+def rotate_array(arr, num)
+  v = ""
+  
+sliced = arr[-num..-1].join(" ")
+ 
+sl = arr[0...-num].join(" ")
+
+v += sliced +" "+ sl
+  
+ arr =  v.split(" ")
+  
+ return p arr
+end
+  
+print rotate_array([ "Matt", "Danny", "Mashu", "Matthias" ], 1) # => [ "Matthias", "Matt", "Danny", "Mashu" ]
+puts
+print rotate_array([ "a", "b", "c", "d" ], 2) # => [ "c", "d", "a", "b" ]
+puts  
  
   
 30.Opposite Count
