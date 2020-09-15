@@ -27,33 +27,23 @@ Here are all my own [algorithm solutions](https://github.com/MarkoDjuric/Ruby-Al
 
 12. Is palindrome
 
-13. Get double age
+13. Yell
 
-14. Get full name
+14. Element time index
 
-15. World leghts
+15. Event nums
 
-16. Doubler
+16. Range
 
-17. Yell
+17. Odd range
 
-18. Element time index
+18. Reverse range
 
-19. Event nums
+19. First half
 
-20. Range
+20. Factors of
 
-21. Odd range
-
-22. Reverse range
-
-23. First half
-
-24. Factors of
-
-25. Sum eleemnts
-
-26. Select odds
+21. Select odds
 
 27. Select longest words
 
