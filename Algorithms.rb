@@ -739,10 +739,10 @@ br = 0
 
 niz.each do |elem|
 if elem === '@' 
-   asterix +=1
+   asterix += 1
 
  elsif elem === '.' 
-   br+=1
+   br += 1
  end
 
 end
@@ -755,12 +755,12 @@ if asterix === 1 && br === 1
 niz.each do |elem|
   brojevi.each do |item|
     if elem === item
-      seekedNumber+=1
+      seekedNumber += 1
     end
    end
 end
 
-  if seekedNumber>0
+  if seekedNumber > 0
     return false
   else
     return true
@@ -950,21 +950,56 @@ print rotate_array([ "Matt", "Danny", "Mashu", "Matthias" ], 1) # => [ "Matthias
 puts
 print rotate_array([ "a", "b", "c", "d" ], 2) # => [ "c", "d", "a", "b" ]
 puts  
- 
+
   
-30.Opposite Count
+  
+31.Pig Latin Word
+#Write a method pig_latin_word that takes in a word string and translates the word into pig latin.  
+  
+  
+# Pig latin translation uses the following rules:
+# - for words that start with a vowel, add 'yay' to the end
+# - for words that start with a nonvowel, move all letters before the first vowel to the end of the word and add 'ay'
+
+def pig_latin_word(word)
+  a = word[0]
+  str=""
+  
+vowels = 'aeiou'
+
+  if vowels.include?(a)
+    return word + 'yay'
+  else
+    word.each_char.with_index  do |el,i|
+      if vowels.include?(el)
+      return  word[i..-1] + word[0...i] + 'ay'
+      end
+    end
+  end
+
+end
+
+puts pig_latin_word("apple")   # => "appleyay"
+puts pig_latin_word("eat")     # => "eatyay"
+puts pig_latin_word("banana")  # => "ananabay"
+puts pig_latin_word("trash")   # => "ashtray"
+  
+  
+  
+  
+31.Opposite Count
 #Write a method opposite_count that takes in an array of unique numbers. 
 #The method should return the number of pairs of elements that sum to 0.
 
 
 def opposite_count(nums)
-    counter=0
+    counter = 0
   
   nums.each_with_index do |num1, idx1|
     nums.each_with_index do |num2, idx2| 
       
-      if idx2>idx1 && num1 === -1*num2
-         counter+=1
+      if idx2 > idx1 && num1 === -1 * num2
+         counter += 1
         
       end
       
