@@ -45,31 +45,35 @@ Here are all my own [algorithm solutions](https://github.com/MarkoDjuric/Ruby-Al
 
 21. Select odds
 
-27. Select longest words
+22. Select longest words
 
-28. Sum elements
+23. Sum elements
 
-29. Fizz buzz
+24. Fizz buzz
 
-30. To initials
+25. To initials
 
-31. First in array
+26. First in array
 
-32. Format name
+27. Format name
 
-33. Is valid name
+28. Is valid name
 
-34. Is valid email
+29. Is valid email
 
-35. Reverse words
+30. Reverse words
 
-36. Rotate array
+31. Rotate array
 
-37. Opposite count
+32. Pig latin word
 
-38. Two D sum
+33. Combinations
 
-39. Two D translate
+34. Opposite count
+
+34. Two D sum
+
+35. Two D translate
 
 40. Get full name
 
