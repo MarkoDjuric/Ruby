@@ -251,7 +251,7 @@ puts reverse("bootcamp")     # => "pmactoob"
 
 
 
-10.Revese(SECOND SOLUTION)
+11.Revese(SECOND SOLUTION)
 
 
 def reverse(word)
@@ -445,8 +445,8 @@ puts
 print reverse_range(1, 7)   # => [6, 5, 4, 3, 2]
 
 
-19.First Half
 
+19.First Half
 #Write a method first_half(array) that takes in an array and returns a new array containing 
 #the first half of the elements in the array. If there is an odd number of elements, 
 #return the first half including the middle element.
@@ -512,7 +512,7 @@ puts
 print factors_of(16)  # => [1, 2, 4, 8, 16]
 
 
-20. Select Odds
+21. Select Odds
 #Write a method select_odds(numbers) that takes in an array of numbers and 
 #returns a new array containing the odd numbers of the original array.
 
@@ -540,7 +540,8 @@ puts
 print select_odds([2, 4, 6])            # => []
 
 
-21.Select Longest Words
+
+22.Select Longest Words
 #Write a method select_longest_words(words) that takes in an array of words 
 #and returns a new array containing all of the words of the original array that are longer than 4 characters.
 
@@ -781,6 +782,7 @@ puts is_valid_email("jdoegmail.com")    # => false
 puts is_valid_email("az@email")         # => false
 
 
+
 28.Is Valid Email(secind solution)
 #Write a method is_valid_email that takes in a string and returns a boolean 
 #indicating whether or not it is a valid email address.
@@ -864,12 +866,12 @@ puts is_valid_email("az@email")         # => false
 def reverse_words(str)
   reversedString = ''
 
-   i=1
+   i = 1
   
    while i <= str.length
        reversedString += str[str.length-i]
   
-      i+=1
+      i += 1
    end
   
   arrNew = reversedString.split(' ')
@@ -955,8 +957,7 @@ puts
   
 31.Pig Latin Word
 #Write a method pig_latin_word that takes in a word string and translates the word into pig latin.  
-  
-  
+   
 # Pig latin translation uses the following rules:
 # - for words that start with a vowel, add 'yay' to the end
 # - for words that start with a nonvowel, move all letters before the first vowel to the end of the word and add 'ay'
@@ -985,9 +986,32 @@ puts pig_latin_word("banana")  # => "ananabay"
 puts pig_latin_word("trash")   # => "ashtray"
   
   
+32.Combinations
+#Write a method combinations that takes in an array of unique elements, 
+#the method should return a 2D array representing all possible combinations of 2 elements of the array.  
   
+
+  def combinations(arr)
+  array = []
   
-31.Opposite Count
+  arr.each_with_index  do |el, i|
+    arr.each_with_index do |char, idx|
+      if idx > i
+      array << [el , char ]
+      end
+    end
+  end
+  return array
+end
+
+print combinations(["a", "b", "c"]); # => [ [ "a", "b" ], [ "a", "c" ], [ "b", "c" ] ]
+puts
+
+print combinations([0, 1, 2, 3]); # => [ [ 0, 1 ], [ 0, 2 ], [ 0, 3 ], [ 1, 2 ], [ 1, 3 ], [ 2, 3 ] ]
+puts
+  
+    
+33.Opposite Count
 #Write a method opposite_count that takes in an array of unique numbers. 
 #The method should return the number of pairs of elements that sum to 0.
 
@@ -1014,7 +1038,7 @@ puts opposite_count([ 21, -23, 24 -12, 23 ]) # => 1
 
 
 
-31.Two D Sum
+34.Two D Sum
 #Write a method two_d_Sum that takes in a two dimensional array and returns the sum of all elements in the array.
 
 
@@ -1037,7 +1061,7 @@ puts two_d_sum([ [4, 5],[1, 3, 7, 1]])    # => 21
 puts two_d_sum([[3, 3],[2],[2, 5]])   # => 15
 
 
-31.Two D Translate
+35.Two D Translate
 #Write a method two_d_translate that takes in a 2 dimensional array and translates it into a 1 dimensional array. 
 #You can assume that the inner arrays always have 2 elements. See the examples.
 
