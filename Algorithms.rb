@@ -228,14 +228,13 @@ puts factorial(3) # => 6, because 1 * 2 * 3 = 6
 puts factorial(5) # => 120, because 1 * 2 * 3 * 4 * 5 = 120
 
 
-10.Reverse
+11.Reverse
 #Write a method reverse(word) that takes in a string word and returns the word with its letters in reverse order.
 
 
 def reverse(word)
   counter = ''
-  
-  
+ 
   i = 1
   while i <= word.length
     counter += word[word.length-i]
@@ -251,7 +250,9 @@ puts reverse("programming")  # => "gnimmargorp"
 puts reverse("bootcamp")     # => "pmactoob"
 
 
+
 10.Revese(SECOND SOLUTION)
+
 
 def reverse(word)
   reversed = ""
@@ -273,22 +274,26 @@ puts reverse("programming")  # => "gnimmargorp"
 puts reverse("bootcamp")     # => "pmactoob"
 
 
-11.Is Palindrome
+12.Is Palindrome
 #Write a method is_palindrome(word) that takes in a string word and returns the true if the word is a palindrome, false otherwise.
 #A palindrome is a word that is spelled the same forwards and backwards.
 
 
 def is_palindrome(word)
   reversed = ''
+  
   i = 1
   while i <= word.length 
     reversed += word[word.length-i]
     i+=1
-  end
+   end
+  
   if reversed == word
        return true 
-  else return false
+  else 
+    return false
   end
+  
 end
 
 puts is_palindrome("racecar")  # => true
@@ -296,7 +301,7 @@ puts is_palindrome("kayak")    # => true
 puts is_palindrome("anaaaaad") # => false
 
 
-12.Yell
+13.Yell
 #Write a method yell(words) that takes in an array of words and returns a
 #new array where every word from the original array has an exclamation point after it.
 
@@ -339,7 +344,7 @@ puts
 print element_times_index([1, 1, 1, 1, 1, 1]) # => [0, 1, 2, 3, 4, 5]
 
 
-14. Even Nums
+14.Even Nums
 #Write a method even_nums(max) that takes in a number max 
 #and returns an array containing all even numbers from 0 to max.
 
@@ -541,7 +546,7 @@ print select_odds([2, 4, 6])            # => []
 #and returns a new array containing all of the words of the original array that are longer than 4 characters.
 
 
-def select_long_words(words)
+def select_longest_words(words)
 
   four_caracters = []
   
@@ -558,9 +563,9 @@ def select_long_words(words)
    return four_caracters
 end
 
-print select_long_words(["what", "are", "we", "eating", "for", "dinner"]) # => ["eating", "dinner"]
+print select_longest_words(["what", "are", "we", "eating", "for", "dinner"]) # => ["eating", "dinner"]
 puts
-print select_long_words(["keep", "coding"])                               # => ["coding"]
+print select_longest_words(["keep", "coding"])                               # => ["coding"]
 
 
 22.Sum Elements
@@ -982,14 +987,11 @@ def two_d_translate(arr)
     str = []
 
    arr.each do |el| 
-     
      el[-1].times do
-       
-       str << el[0]
-       
+        str << el[0]
      end
      
-   end
+  end
   
  return str
 end
@@ -997,10 +999,8 @@ end
  
 print two_d_translate([['boot', 3],['camp', 2],['program', 0]]) # => [ 'boot', 'boot', 'boot', 'camp', 'camp' ]
 puts
-
 print two_d_translate([['red', 1],['blue', 4]]) # => [ 'red', 'blue', 'blue', 'blue', 'blue' ]
 puts
-
 
 
 32.Get Double
