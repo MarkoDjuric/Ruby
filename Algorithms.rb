@@ -1672,7 +1672,7 @@ print summation_sequence(3, 4) # => [3, 6, 21, 231]
 print summation_sequence(5, 3) # => [5, 15, 120]
 
 
-70.Fibonacci
+60.Fibonacci
 #The fibonacci sequence is a sequence of numbers whose first and second elements are 1. 
 #To generate further elements of the sequence we take the sum of the previous two elements. 
 #For example the first 6 fibonacci numbers are 1, 1, 2, 3, 5, 8. 
@@ -1719,7 +1719,7 @@ print fibonacci(8) # => [1, 1, 2, 3, 5, 8, 13, 21]
 puts
 
 
-71.Caesar Cipher
+61.Caesar Cipher
 #Write a method caesar_cipher that takes in a string and a number. 
 #The method should return a new string where every character of the original is shifted num characters in the alphabet
 
@@ -1747,7 +1747,7 @@ puts caesar_cipher("bootcamp", 2) #=> "dqqvecor"
 puts caesar_cipher("zebra", 4)    #=> "difve"
 
 
-72.Double Letter Count
+62.Double Letter Count
 #Write a method that takes in a string and returns the number of times that the same letter repeats twice in a row.
   
 
@@ -1774,7 +1774,7 @@ puts double_letter_count("bootcamp") #=> 1
 
 
 
-73.Adjacent Sum
+63.Adjacent Sum
 #Write a method adjacent_sum that takes in an array of numbers and returns a new array containing the sums of adjacent numbers in the original array. See the examples.
 
 
@@ -1804,7 +1804,7 @@ puts
 
 
 
-74.Pyramid Sum
+64.Pyramid Sum
 #Write a method pyramid_sum that takes in an array of numbers representing the base of a pyramid. 
 #The function should return a 2D array representing a complete pyramid with the given base. 
 #To construct a level of the pyramid, we take the sum of adjacent elements of the level below.
@@ -1865,7 +1865,7 @@ puts
 
 
 
-75.All Else Equal
+65.All Else Equal
 #Write a method all_else_equal that takes in an array of numbers. The method should return the element of the array that is equal to half of the sum of all elements of the array.
 #If there is no such element, the method should return nil.
 
@@ -1898,7 +1898,7 @@ p all_else_equal([1, 2, 3, 4])     #=> nil, because the sum of all elements is 1
 
 
 
-76.Anagrams
+66.Anagrams
 #Write a method anagrams? that takes in two words and returns a boolean indicating whether or not the words are anagrams.
 #Anagrams are words that contain the same characters but not necessarily in the same order. Solve this without using .sort
 
@@ -1926,7 +1926,7 @@ puts anagrams?("bootcemp", "bootcamp")    #=> false
 
 
 
-77.Consonant Cancel
+67.Consonant Cancel
 #Write a method consonant_cancel that takes in a sentence and returns a new sentence where every word begins with it's first vowel.
 
 
@@ -1956,7 +1956,7 @@ puts consonant_cancel("down the rabbit hole") #=> "own e abbit ole"
 puts consonant_cancel("writing code is challenging") #=> "iting ode is allenging"
 
 
-78.Same Char Collapse
+68.Same Char Collapse
 #Write a method same_char_collapse that takes in a string and returns a collapsed version of the string. 
 #To collapse the string, we repeatedly delete 2 adjacent characters that are the same until there are no such adjacent characters. 
 #If there are multiple pairs that can be collapsed, delete the leftmost pair. For example, we take the following steps to collapse "zzzxaaxy": zzzxaaxy -> zxaaxy -> zxxy -> zy
@@ -1985,7 +1985,7 @@ puts same_char_collapse("uqrssrqvtt") #=> "uv"
 # because uqrssrqvtt -> uqrrqvtt -> uqqvtt -> uvtt -> uv
 
 
-79.Array Translate
+69.Array Translate
 #Write a method array_translate that takes in an array whose elements alternate between words and numbers. 
 #The method should return a string where each word is repeated the number of times that immediately follows in the array.
 
