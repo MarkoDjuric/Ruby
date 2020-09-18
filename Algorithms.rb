@@ -1190,7 +1190,7 @@ puts ae_count("keyboard") #=> {"a"=>1, "e"=>1}
 
 
 
-38.Element Count
+42.Element Count
 #Write a method element_count that takes in an array and returns a hash representing the count of each element in the array.
 
 
@@ -1207,7 +1207,7 @@ puts element_count(["a", "b", "a", "a", "b"]) #=> {"a"=>3, "b"=>2}
 puts element_count(["red", "red", "blue", "green"]) #=> {"red"=>2, "blue"=>1, "green"=>1}
 
 
-39.Select Upcase Keys
+43.Select Upcase Keys
 #Write a method select_upcase_keys that takes in a hash and returns a new hash containing key-value pairs of the original hash that had uppercase keys. 
 #You can assume that the keys will always be strings.
 
@@ -1230,7 +1230,7 @@ print select_upcase_keys({"DATE"=>"July 4th","holiday"=> "Independence Day", "ty
 puts
 
 
-40.Hand Score
+44.Hand Score
 #Write a method hand_score that takes in a string representing a hand of cards and returns it's total score.
 #You can assume the letters in the string are only A, K, Q, J. A is worth 4 points, K is 3 points, Q is 2 points, and J is 1 point. 
 #The letters of the input string not necessarily uppercase.
@@ -1260,7 +1260,7 @@ puts hand_score("jJka") #=> 9
 
 
 
-41.Frequent Letters
+45.Frequent Letters
 #Write a method frequent_letters that takes in a string and returns an array containing the characters that appeared more than twice in the string
 
 
@@ -1285,7 +1285,7 @@ puts
 
 
 
-41.Hash To Pairs
+46.Hash To Pairs
 #Write a method hash_to_pairs that takes in a hash and returns a 2D array representing each key-value pair of the hash.
 
 
@@ -1312,7 +1312,7 @@ print hash_to_pairs({"kingdom"=>"animalia", "genus"=>"canis", "breed"=>"German S
 puts
 
 
-42.Unique Elements
+47.Unique Elements
 #Write a method unique_elements that takes in an array and returns a new array where all duplicate elements are removed.
 #Solve this using a hash.
 
@@ -1329,7 +1329,7 @@ puts
 
 
 
-43.Map By Name
+48.Map By Name
 #Write a method map_by_name  that takes in an array of hashes and returns a new array containing the names of each hash.
 
 
@@ -1361,7 +1361,7 @@ print map_by_name(countries) #=> ["Japan", "Hungary", "Kenya"]
 puts
 
 
-44.Map By Key
+49.Map By Key
 #Write a method map_by_key that takes in an array of hashes and a key string. 
 #The method should returns a new array containing the values from each hash for the given key.
 
@@ -1384,7 +1384,7 @@ print map_by_key(locations, "city") #=> ["New York City", "San Francisco", "Port
 puts
 
 
-45.Yell Sentence
+50.Yell Sentence
 #Write a method yell_sentence that takes in a sentence string and returns a new sentence where every word is yelled. 
 #See the examples. Use map to solve this.
 
@@ -1403,7 +1403,7 @@ end
 puts yell_sentence("I have a bad feeling about this") #=> "I! HAVE! A! BAD! FEELING! ABOUT! THIS!"
 
 
-46.Whisper Words
+51.Whisper Words
 #Write a method whisper_words that takes in an array of words and returns a new array containing 
 #a whispered version of each word. See the examples. Solve this using map :).
 
@@ -1420,7 +1420,7 @@ print whisper_words(["KEEP", "The", "NOISE", "down"]) # => ["keep...", "the...",
 puts
 
 
-47.o Words
+52.o Words
 #Write a method o_words that takes in a sentence string and returns an array of the words that contain an "o".
 #Use select in your solution!
 
@@ -1441,7 +1441,7 @@ print o_words("How did you do that?") #=> ["How", "you", "do"]
 puts
 
 
-48.Last Index
+53.Last Index
 #Write a method last_index that takes in a string and a character. 
 #The method should return the last index where the character can be found in the string.
 
@@ -1462,7 +1462,7 @@ puts last_index("mississipi", "i") #=> 9
 
 
 
-49.Most Vowels
+54.Most Vowels
 #Write a method most_vowels that takes in a sentence string and returns the word of the sentence that contains the most vowels.
 
 
@@ -1507,7 +1507,7 @@ print most_vowels("what a wonderful life") #=> "wonderful"
 
 
 
-50.Prime
+55.Prime
 #Write a method prime? that takes in a number and returns a boolean, indicating whether the number is prime.
 #A prime number is only divisible by 1 and itself.
 
@@ -1540,7 +1540,7 @@ puts prime?(-5) #=> false
 
 
 
-51.Pick Primes
+56.Pick Primes
 #Write a method pick_primes that takes in an array of numbers and returns a new array containing only the prime numbers.
 
 def pick_primes(numbers) 
@@ -1578,7 +1578,7 @@ puts
 
 
 
-52.Greatest Factor Array
+57.Greatest Factor Array
 #Write a method greatest_factor_array that takes in an array of numbers and returns a new array where every even number is replaced with it's greatest factor.
 #A greatest factor is the largest number that divides another with no remainder. For example the greatest factor of 16 is 8. 
 #(For the purpose of this problem we won't say the greatest factor of 16 is 16, because that would be too easy, ha)
@@ -1616,7 +1616,7 @@ print greatest_factor_array([30, 3, 24, 21, 10]) # => [15, 3, 12, 21, 5]
 puts
 
 
-53.Triple Sequence
+58.Triple Sequence
 #Write a method triple_sequence that takes in two numbers, start and length. 
 #The method should return an array representing a sequence that begins with start and is length elements long. 
 #In the sequence, every element should be 3 times the previous element. Assume that the length is at least 1.
@@ -1640,7 +1640,7 @@ puts
 
 
 
-54.Summation Sequence
+59.Summation Sequence
 #A number's summation is the sum of all positive numbers less than or equal to the number. 
 #For example: the summation of 3 is 6 because 1 + 2 + 3 = 6, the summation of 6 is 21 because 1 + 2 + 3 + 4 + 5 + 6 = 21.
 #Write a method summation_sequence that takes in a two numbers: start and length. The method should return an array containing length total elements. 
@@ -1672,7 +1672,7 @@ print summation_sequence(3, 4) # => [3, 6, 21, 231]
 print summation_sequence(5, 3) # => [5, 15, 120]
 
 
-54.Fibonacci
+70.Fibonacci
 #The fibonacci sequence is a sequence of numbers whose first and second elements are 1. 
 #To generate further elements of the sequence we take the sum of the previous two elements. 
 #For example the first 6 fibonacci numbers are 1, 1, 2, 3, 5, 8. 
@@ -1719,7 +1719,7 @@ print fibonacci(8) # => [1, 1, 2, 3, 5, 8, 13, 21]
 puts
 
 
-55.Caesar Cipher
+71.Caesar Cipher
 #Write a method caesar_cipher that takes in a string and a number. 
 #The method should return a new string where every character of the original is shifted num characters in the alphabet
 
@@ -1747,7 +1747,7 @@ puts caesar_cipher("bootcamp", 2) #=> "dqqvecor"
 puts caesar_cipher("zebra", 4)    #=> "difve"
 
 
-56.Double Letter Count
+72.Double Letter Count
 #Write a method that takes in a string and returns the number of times that the same letter repeats twice in a row.
   
 
@@ -1774,7 +1774,7 @@ puts double_letter_count("bootcamp") #=> 1
 
 
 
-57.Adjacent Sum
+73.Adjacent Sum
 #Write a method adjacent_sum that takes in an array of numbers and returns a new array containing the sums of adjacent numbers in the original array. See the examples.
 
 
@@ -1804,7 +1804,7 @@ puts
 
 
 
-58.Pyramid Sum
+74.Pyramid Sum
 #Write a method pyramid_sum that takes in an array of numbers representing the base of a pyramid. 
 #The function should return a 2D array representing a complete pyramid with the given base. 
 #To construct a level of the pyramid, we take the sum of adjacent elements of the level below.
@@ -1865,7 +1865,7 @@ puts
 
 
 
-59.All Else Equal
+75.All Else Equal
 #Write a method all_else_equal that takes in an array of numbers. The method should return the element of the array that is equal to half of the sum of all elements of the array.
 #If there is no such element, the method should return nil.
 
@@ -1898,7 +1898,7 @@ p all_else_equal([1, 2, 3, 4])     #=> nil, because the sum of all elements is 1
 
 
 
-60.Anagrams
+76.Anagrams
 #Write a method anagrams? that takes in two words and returns a boolean indicating whether or not the words are anagrams.
 #Anagrams are words that contain the same characters but not necessarily in the same order. Solve this without using .sort
 
@@ -1926,7 +1926,7 @@ puts anagrams?("bootcemp", "bootcamp")    #=> false
 
 
 
-61.Consonant Cancel
+77.Consonant Cancel
 #Write a method consonant_cancel that takes in a sentence and returns a new sentence where every word begins with it's first vowel.
 
 
@@ -1956,7 +1956,7 @@ puts consonant_cancel("down the rabbit hole") #=> "own e abbit ole"
 puts consonant_cancel("writing code is challenging") #=> "iting ode is allenging"
 
 
-62.Same Char Collapse
+78.Same Char Collapse
 #Write a method same_char_collapse that takes in a string and returns a collapsed version of the string. 
 #To collapse the string, we repeatedly delete 2 adjacent characters that are the same until there are no such adjacent characters. 
 #If there are multiple pairs that can be collapsed, delete the leftmost pair. For example, we take the following steps to collapse "zzzxaaxy": zzzxaaxy -> zxaaxy -> zxxy -> zy
@@ -1985,7 +1985,7 @@ puts same_char_collapse("uqrssrqvtt") #=> "uv"
 # because uqrssrqvtt -> uqrrqvtt -> uqqvtt -> uvtt -> uv
 
 
-63.Array Translate
+79.Array Translate
 #Write a method array_translate that takes in an array whose elements alternate between words and numbers. 
 #The method should return a string where each word is repeated the number of times that immediately follows in the array.
 
@@ -1997,17 +1997,19 @@ def array_translate(array)
   first = 0
   second = 1
   
-
-  
   i = 0
   while i < length 
      array[second].times do
       string += array[first]
+       
     end
+    
     i += 1
     first += 2
     second += 2
+    
   end
+  
   return string
 end
 
