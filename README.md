@@ -85,53 +85,61 @@ Here are all my own [algorithm solutions](https://github.com/MarkoDjuric/Ruby-Al
 
 41. Ae count
 
-45. Element count
+42. Element count
 
-46. Select upcase keys
+43. Select upcase keys
 
-47. Hand score
+44. Hand score
 
-48. Frequent letters
+45. Frequent letters
 
-49. Hash to pairs
+46. Hash to pairs
 
-50. Unique elements
+47. Unique elements
 
-52. Map by name
+48. Map by name
 
-53. Map by key
+49. Map by key
 
-54. Yell sentence
+50. Yell sentence
 
-55. Whisper sords
+51. Whisper sords
 
-56. 0 words
+52. 0 words
 
-57. Last index
+53. Last index
 
-58. Most vowels
+54. Most vowels
 
-59. Prime number
+55. Prime 
 
-60. Pick primes
+56. Pick primes
 
-61. Greatest factor array
+57. Greatest factor array
 
-62. Triple sequence
+68. Triple sequence
 
-63. Summation sequence
+69. Summation sequence
 
-64. Fibonacci
+70. Fibonacci
 
-65. Ceaser chiper
+71. Ceaser chiper
 
-66. Double letter count
+72. Double letter count
 
-67. Adjacent sum
+73. Adjacent sum
 
-68. Pyramid sum
+74. Pyramid sum
 
-69. Anagrams
+75. All Else Equal
+
+76. Anagrams
+
+77. Consonant Cancel
+
+78. Same Char Collapse
+
+79. Array Translate
 
 
 
