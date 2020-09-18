@@ -13,13 +13,12 @@ def either_only(number)
     
   elsif number % 5 == 0 && number % 3 != 0
     
-    return true
+     return true  
     
   else
     
     return false
   end
-  
 end
 
 puts either_only(9)  # => true
@@ -80,14 +79,19 @@ puts longer_string("hello", "world") # => "hello"
 #if the num is negative, and 'zero' if the num is zero.
 
 
-def number_check(num)
+def number_check(num) 
+  
   if num > 0
+    
     return 'positive'
   elsif num == 0 
+    
     return 'zero'
   else 
+    
     return 'negative'
   end
+  
 end
 
 puts number_check(5)    # => "positive"
@@ -171,6 +175,7 @@ puts count_a("Aardvark")     # => 3
 
 def count_vowels(word)
  counter = 0
+  
   i = 0
   while i  < word.length
      if word[i] == 'a' || word[i] == 'e' || word[i] == 'i'|| word[i] == 'o'|| word[i] == 'u'
@@ -259,13 +264,11 @@ def reverse(word)
 
   i = 0
   while i < word.length
-    char = word[i]
-    
-    reversed = char + reversed  # put element at the end of string with each iteration, not at the start as usual.
-
+     char = word[i]
+     #put element at the end of string with each iteration, not at the start as usual.
+     reversed = char + reversed 
     i += 1
   end
-
   return reversed
 end
 
@@ -512,7 +515,7 @@ puts
 print factors_of(16)  # => [1, 2, 4, 8, 16]
 
 
-21. Select Odds
+21.Select Odds
 #Write a method select_odds(numbers) that takes in an array of numbers and 
 #returns a new array containing the odd numbers of the original array.
 
@@ -568,7 +571,7 @@ puts
 print select_longest_words(["keep", "coding"])                               # => ["coding"]
 
 
-22.Sum Elements
+23.Sum Elements
 #Write a method sum_elements(arr1, arr2) that takes in two arrays. 
 #The method should return a new array containing the results of adding together corresponding elements of the original arrays. You can assume the arrays have the same length.
 
@@ -596,7 +599,7 @@ puts
 print sum_elements(["cat", "pizza", "boot"], ["dog", "pie", "camp"]) # => ["catdog", "pizzapie", "bootcamp"]
 
 
-23.Fizz Buzz
+24.Fizz Buzz
 #Write a method fizz_buzz(max) that takes in a number max and returns an array 
 #containing all numbers greater than 0 and less than max that are divisible by either 4 or 6, but not both
 
@@ -623,7 +626,7 @@ puts
 print fizz_buzz(15) # => [4, 6, 8]
 
 
-24.To Initials
+25.To Initials
 #Write a method to_initials that takes in a person's name string and returns a string representing their initials.
 
 
@@ -640,7 +643,7 @@ puts to_initials("Michaela Yamamoto")   # => "MY"
 puts to_initials("Mary La Grange")      # => "MLG"
 
 
-25.First in Array
+26.First in Array
 #Write a method first_in_array that takes in an array and two elements, 
 #the method should return the element that appears earlier in the array.
 
@@ -661,7 +664,7 @@ puts first_in_array(["a", "b", "c", "d"], "d", "b"); # => "b"
 puts first_in_array(["cat", "bird" ,"dog", "mouse" ], "dog", "mouse"); # => "dog"
 
 
-26.Format Name
+27.Format Name
 #Write a method format_name that takes in a name string and returns the name properly capitalized.
 # Hint: use str.upcase and str.downcase
 # "abc".upcase # => "ABC"
@@ -682,7 +685,7 @@ puts format_name("chase WILSON") # => "Chase Wilson"
 puts format_name("brian CrAwFoRd scoTT") # => "Brian Crawford Scott"
 
 
-27.Is Valid Name
+28.Is Valid Name
 #Write a method is_valid_name that takes in a string and returns a boolean indicating whether 
 #or not it is a valid name.
 
@@ -718,7 +721,7 @@ puts is_valid_name("Robert Downey Jr") # => true
 puts is_valid_name("ROBERT DOWNEY JR") # => false
 
 
-28.Is Valid Email
+29.Is Valid Email
 #Write a method is_valid_email that takes in a string and returns a boolean 
 #indicating whether or not it is a valid email address.
 
@@ -783,7 +786,7 @@ puts is_valid_email("az@email")         # => false
 
 
 
-28.Is Valid Email(secind solution)
+29.Is Valid Email(secind solution)
 #Write a method is_valid_email that takes in a string and returns a boolean 
 #indicating whether or not it is a valid email address.
 
@@ -857,7 +860,7 @@ puts is_valid_email("az@email")         # => false
 
 
 
-29.Reverse Words
+30.Reverse Words
 #Write a method reverse_words that takes in a sentence string and returns the sentence 
 #with the order of the characters in each word reversed. 
 #Note that we need to reverse the order of characters in the words, do not reverse the order of words in the sentence.
@@ -894,7 +897,7 @@ puts reverse_words('simplicity is prerequisite for reliability') # => 'yticilpmi
 
 
   
-29.Reverse Words (SECOND SOLUTION)
+30.Reverse Words (SECOND SOLUTION)
 #Write a method reverse_words that takes in a sentence string and returns the sentence 
 #with the order of the characters in each word reversed. 
 #Note that we need to reverse the order of characters in the words, do not reverse the order of words in the sentence.  
@@ -929,7 +932,7 @@ puts reverse_words('simplicity is prerequisite for reliability') # => 'yticilpmi
 
   
   
-30.Rotate Array
+31.Rotate Array
 #Write a method rotate_array that takes in an array and a number. The method should return the array after rotating the elements the specified number of times. 
 #A single rotation takes the last element of the array and moves it to the front.
 
@@ -955,7 +958,7 @@ puts
 
   
   
-31.Pig Latin Word
+32.Pig Latin Word
 #Write a method pig_latin_word that takes in a word string and translates the word into pig latin.  
    
 # Pig latin translation uses the following rules:
