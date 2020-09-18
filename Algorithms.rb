@@ -989,7 +989,7 @@ puts pig_latin_word("banana")  # => "ananabay"
 puts pig_latin_word("trash")   # => "ashtray"
   
   
-32.Combinations
+33.Combinations
 #Write a method combinations that takes in an array of unique elements, 
 #the method should return a 2D array representing all possible combinations of 2 elements of the array.  
   
@@ -1014,7 +1014,7 @@ print combinations([0, 1, 2, 3]); # => [ [ 0, 1 ], [ 0, 2 ], [ 0, 3 ], [ 1, 2 ],
 puts
   
     
-33.Opposite Count
+34.Opposite Count
 #Write a method opposite_count that takes in an array of unique numbers. 
 #The method should return the number of pairs of elements that sum to 0.
 
@@ -1041,7 +1041,7 @@ puts opposite_count([ 21, -23, 24 -12, 23 ]) # => 1
 
 
 
-34.Two D Sum
+35.Two D Sum
 #Write a method two_d_Sum that takes in a two dimensional array and returns the sum of all elements in the array.
 
 
@@ -1064,7 +1064,7 @@ puts two_d_sum([ [4, 5],[1, 3, 7, 1]])    # => 21
 puts two_d_sum([[3, 3],[2],[2, 5]])   # => 15
 
 
-35.Two D Translate
+36.Two D Translate
 #Write a method two_d_translate that takes in a 2 dimensional array and translates it into a 1 dimensional array. 
 #You can assume that the inner arrays always have 2 elements. See the examples.
 
@@ -1089,22 +1089,8 @@ print two_d_translate([['red', 1],['blue', 4]]) # => [ 'red', 'blue', 'blue', 'b
 puts
 
 
-32.Get Double
-#Write a method get_double_age that takes in a hash and returns twice the "age" value of the hash.
 
-
-def get_double_age(hash)
-
-  return hash["age"] * 2
-  
-end
-
-puts get_double_age({"name"=>"App Academy", "age"=>5}) # => 10
-puts get_double_age({"name"=>"Ruby", "age"=>23})       # => 46
-
-
-
-33.Get Full Name
+37.Get Full Name
 #Write a method get_full_name that takes in a hash containing a first, last, and title. 
 #The method should return a string representing the hash's full name.
 
@@ -1122,7 +1108,7 @@ hash2 = {"first"=>"Fido", "last"=>"McDog", "title"=> "Loyal"}
 puts get_full_name(hash2) # => "Fido McDog, the Loyal"
 
 
-34.Word Lengths
+38.Word Lengths
 #Write a method word_lengths that takes in a sentence string and returns a hash where every key is a word of the sentence,
 # and its' corresponding value is the length of that word.
 
@@ -1145,7 +1131,8 @@ puts word_lengths("this is fun") #=> {"this"=>4, "is"=>2, "fun"=>3}
 puts word_lengths("When in doubt, leave it out") #=> {"When"=>4, "in"=>2, "doubt,"=>6, "leave"=>5, "it"=>2, "out"=>3}
 
 
-35.Retrieve Values
+
+39.Retrieve Values
 #Write a method retrieve_values that takes in two hashes and a key. 
 #The method should return an array containing the values from the two hashes that correspond with the given key.
 
@@ -1163,7 +1150,7 @@ def retrieve_values(hash1, hash2, key)
   end
 
 
-36.Cat Builder
+40.Cat Builder
 #Write a method cat_builder that takes in a name, color, and age. 
 #The method should return a hash representing a cat with those values.
 
@@ -1179,7 +1166,7 @@ print cat_builder("Salem", "black", 100) #=> {"name"=>"Salem", "color"=>"black",
 puts
 
   
-37.Ae Count
+41.Ae Count
 #Write a method ae_count that takes in a string and returns a hash containing the number of a's and e's in the string.
 #Assume the string contains only lowercase characters.
 
