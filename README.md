@@ -31,7 +31,7 @@ Here are all my own [algorithm solutions](https://github.com/MarkoDjuric/Ruby-Al
 
 14. Element time index
 
-15. Event nums
+15. Even nums
 
 16. Range
 
@@ -71,19 +71,19 @@ Here are all my own [algorithm solutions](https://github.com/MarkoDjuric/Ruby-Al
 
 34. Opposite count
 
-34. Two D sum
+35. Two D sum
 
-35. Two D translate
+36. Two D translate
 
-40. Get full name
+37. Get full name
 
-41. Word lengths
+38. Word lengths
 
-42. Retrive values
+39. Retrive values
 
-43. Cat builder
+40. Cat builder
 
-44. Ae count
+41. Ae count
 
 45. Element count
 
