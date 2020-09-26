@@ -73,6 +73,7 @@ puts longer_string("summer", "fall") # => "summer"
 puts longer_string("hello", "world") # => "hello"
 
 
+
 4.Number Check
 #Write a method number_check(num) that takes in a number and returns a string. 
 #The method should return the string 'positive' if the num is positive, 'negative' 
@@ -99,6 +100,7 @@ puts number_check(-2)   # => "negative"
 puts number_check(0)    # => "zero"
 
 
+
 5.Word Check
 #Write a method word_check(word) that takes in a word and returns a string. 
 #The method should return the string "long" if the word is longer than 6 characters, 
@@ -118,6 +120,7 @@ end
 puts word_check("contraption") # => "long"
 puts word_check("fruit")       # => "short"
 puts word_check("puzzle")      # => "medium"
+
 
 
 6.Count E
@@ -141,6 +144,7 @@ end
 
 puts count_e("movie") # => 1
 puts count_e("excellent") # => 3
+
 
 
 7.Count A
@@ -168,6 +172,7 @@ puts count_a("Arthur")       # => 1
 puts count_a("Aardvark")     # => 3
 
 
+
 8.Count Vowels
 #Write a method, count_vowels(word), that takes in a string word and returns the number of vowels in the word.
 #Vowels are the letters a, e, i, o, u
@@ -189,6 +194,7 @@ end
 puts count_vowels("bootcamp")  # => 3
 puts count_vowels("apple")     # => 2
 puts count_vowels("pizza")     # => 2
+
 
 
 9.Sum Nums
@@ -231,6 +237,7 @@ end
 
 puts factorial(3) # => 6, because 1 * 2 * 3 = 6
 puts factorial(5) # => 120, because 1 * 2 * 3 * 4 * 5 = 120
+
 
 
 11.Reverse
