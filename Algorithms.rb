@@ -1706,14 +1706,11 @@ def fibonacci(length)
        
          last =  fibonacci_array[-1] + fibonacci_array[-2]
        
-           fibonacci_array << last
-       
- 
-         end
-
+          fibonacci_array << last
+        end
    end
       
-  return   fibonacci_array
+    return   fibonacci_array
   end
   
 print fibonacci(0) # => []
@@ -1746,7 +1743,7 @@ str.each_char.with_index do |el, idx|
   final_str +=   alphastr[alphastr.index(el) + num]
   end
 
-return  final_str 
+  return  final_str 
 end
 
 puts caesar_cipher("apple", 1)    #=> "bqqmf"
@@ -1766,7 +1763,7 @@ def double_letter_count(string)
    arr.each_with_index do |char, i|
   
       if char == arr[i+1]
-        counter+=1
+        counter += 1
        
       end
     
