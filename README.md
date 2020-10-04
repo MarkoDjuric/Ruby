@@ -129,7 +129,7 @@ Here are all my own [algorithm solutions](https://github.com/MarkoDjuric/Ruby-Al
 
 73. Adjacent sum
 
-74. Pyramid sum
+74. Pyramid Sum
 
 75. All Else Equal
 
@@ -140,6 +140,8 @@ Here are all my own [algorithm solutions](https://github.com/MarkoDjuric/Ruby-Al
 78. Same Char Collapse
 
 79. Array Translate
+
+80. Element Repalce
 
 
 
