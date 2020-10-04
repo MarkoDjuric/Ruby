@@ -2038,17 +2038,14 @@ def element_replace(arr, hash)
         new_arr << val 
        elsif !hash.has_key?(el)
         if !new_arr.include?(el)
-       new_arr << el
+          new_arr << el
         end
       end
-       
-      end
     end
-  
-     
-  return new_arr
-  
+  end
+   return new_arr
 end
+
 
 arr1 = ["LeBron James", "Lionel Messi", "Serena Williams"]
 hash1 = {"Serena Williams"=>"tennis", "LeBron James"=>"basketball"}
