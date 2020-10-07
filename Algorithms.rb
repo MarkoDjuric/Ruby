@@ -180,14 +180,15 @@ puts count_a("Aardvark")     # => 3
 
 def count_vowels(word)
  counter = 0
+ i = 0
   
-  i = 0
   while i  < word.length
      if word[i] == 'a' || word[i] == 'e' || word[i] == 'i'|| word[i] == 'o'|| word[i] == 'u'
         counter += 1
       end
      i += 1
   end
+  
   return counter
 end
 
@@ -204,13 +205,14 @@ puts count_vowels("pizza")     # => 2
 
 def sum_nums(max)
   counter = 0
-  
   i = 1
+  
   while i <=  max 
     counter += i
     i += 1
   end
-return counter
+  
+  return counter
 end
 
 puts sum_nums(6) # => 10, because 1 + 2 + 3 + 4 = 10
@@ -232,7 +234,8 @@ def factorial(num)
     counter*=i
     i+=1
   end
-   return counter
+  
+  return counter
 end
 
 puts factorial(3) # => 6, because 1 * 2 * 3 = 6
