@@ -2033,20 +2033,22 @@ puts
 
 
 def element_replace(arr, hash)
- new_arr=[]
+  new_arr=[]
   temp_arr =[]
+  
   arr.each_with_index do |el, i|
     hash.each do  |key, val|
       if el == key 
         new_arr << val 
        elsif !hash.has_key?(el)
-        if !new_arr.include?(el)
-          new_arr << el
-        end
+         if !new_arr.include?(el)
+           new_arr << el
+         end
       end
     end
   end
-   return new_arr
+  
+  return new_arr
 end
 
 
