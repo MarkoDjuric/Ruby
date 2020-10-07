@@ -2006,16 +2006,14 @@ def array_translate(array)
   
   i = 0
   while i < length 
-     array[second].times do
+    array[second].times do
       string += array[first]
-       
     end
     
     i += 1
     first += 2
     second += 2
-    
-  end
+   end
   
   return string
 end
@@ -2025,6 +2023,7 @@ puts
 
 print array_translate(["red", 3, "blue", 1]); # => "redredredblue"
 puts
+
 
 
 70.Element Replace
