@@ -503,12 +503,11 @@ def factors_of(num)
   
   i = 1
   
-  while i <= num
-    
+  while i <= num 
     if num % i == 0 
      array_positive << i
     end
-    i+=1
+   i+=1
   end
   
   return  array_positive
@@ -567,13 +566,13 @@ def select_longest_words(words)
    
   while i < words.length
     if words[i].length > 4
-       four_caracters << words[i]
+     four_caracters << words[i]
     end
     
     i+=1
   end
   
-   return four_caracters
+  return four_caracters
 end
 
 print select_longest_words(["what", "are", "we", "eating", "for", "dinner"]) # => ["eating", "dinner"]
