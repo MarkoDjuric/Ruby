@@ -1734,7 +1734,7 @@ puts
 # alphabet = "abcdefghijklmnopqrstuvwxyz"
 
 def caesar_cipher(str, num)
-   final_str = ''
+  final_str = ''
   
    alphabet = "abcdefghijklmnopqrstuvwxyz"
 
@@ -1743,7 +1743,7 @@ def caesar_cipher(str, num)
   
 str.each_char.with_index do |el, idx|
   final_str +=   alphastr[alphastr.index(el) + num]
-  end
+end
 
   return  final_str 
 end
@@ -1800,7 +1800,7 @@ def adjacent_sum(arr)
  
   end 
   
-   return counter
+  return counter
 end
 
 print adjacent_sum([3, 7, 2, 11]) #=> [10, 9, 13], because [ 3+7, 7+2, 2+11 ]
