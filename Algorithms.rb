@@ -393,12 +393,9 @@ def range(min, max)
   i = 0
   
   while i <= max - min  
-
-    array << min+i
-    
-    i+=1
-    
-  end
+     array << min+i
+   i+=1
+   end
   return array 
 end
 
@@ -413,15 +410,14 @@ print range(13, 20) # => [13, 14, 15, 16, 17, 18, 19, 20]
 
 
 def odd_range(min, max)
-
-   array = []
+  array = []
   i = 0
+  
   while min <= max   
     
-if min % 2 != 0
-    array << min
-    
-end   
+    if min % 2 != 0
+      array << min
+    end   
     min+=1
     i+=1
   end
